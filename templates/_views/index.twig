@@ -1,0 +1,5 @@
+{% if entry.slug == "__home__" %}
+	{% include '_views/pages/home' %}
+{% else %}
+	{% include '_views/pages/'~entry.slug %}
+{% endif %}

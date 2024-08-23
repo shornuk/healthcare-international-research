@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 5431bafd-29d8-43b2-a26c-48135f820dbc # Standard
+handle: pages
+maxAuthors: 1
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  6c1f48e9-4588-4100-8f79-5410aacc580e: # Healthcare International Research
+    enabledByDefault: true
+    hasUrls: true
+    template: _views/index.twig
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: 70567efb-fdc4-4145-be53-8d0aba792914
+type: structure

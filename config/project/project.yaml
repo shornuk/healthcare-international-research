@@ -1,0 +1,76 @@
+dateModified: 1724370046
+elementSources:
+  craft\elements\Asset:
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      disabled: false
+      key: 'volume:fee9d930-a30a-442b-848c-4a14f56c589d' # Images
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+        - id
+      type: native
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      disabled: false
+      key: 'volume:aa418ba7-b818-4669-8693-5e4caac625e4' # Documents
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+        - 'field:f72b528d-6b33-4330-aa32-e66eaebc9164' # Subtitle
+      type: native
+    -
+      key: temp
+      type: native
+email:
+  fromEmail: me@shorn.co.uk
+  fromName: 'Healthcare International Research'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  assets:
+    hasUrls: true
+    name: Assets
+    settings:
+      path: $ASSETS_BASE_PATH
+    type: craft\fs\Local
+    url: $ASSETS_URL
+meta:
+  __names__:
+    6c1f48e9-4588-4100-8f79-5410aacc580e: 'Healthcare International Research' # Healthcare International Research
+    8cb4965b-31f5-4fcc-9b8c-4a3f6820e48a: 'Healthcare International Research' # Healthcare International Research
+    208c7680-47e0-46c7-9b9f-27851975835d: Pages # Pages
+    955fe759-5ee7-4082-b22a-42b3712b6cd8: Published # Published
+    5431bafd-29d8-43b2-a26c-48135f820dbc: Standard # Standard
+    aa418ba7-b818-4669-8693-5e4caac625e4: Documents # Documents
+    ace47efd-105d-41d5-8d5f-55a57c7ba41e: Overview # Overview
+    c08c5155-2407-43fe-ae29-0b430dbeb19c: Simple # Simple
+    d2d8e874-9460-48c8-beed-355df0e4a564: Text # Text
+    f72b528d-6b33-4330-aa32-e66eaebc9164: Subtitle # Subtitle
+    fee9d930-a30a-442b-848c-4a14f56c589d: Images # Images
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Healthcare International Research'
+  retryDuration: null
+  schemaVersion: 5.3.0.2
+  timeZone: Europe/London
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

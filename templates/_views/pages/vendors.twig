@@ -1,0 +1,15 @@
+{% extends "_layouts/base" %}
+
+{% set meta = {
+	eyebrow: 'Our brands',
+	title: entry.title,
+	text: "As we expand globally, here's a growing list of online and high-street retailers where you can find our HEMPE and MotherSage products."
+} %}
+
+{% block content %}
+	<div class="mx-auto max-w-7xl px-6 lg:px-8 prose prose-slate dark:prose-invert">
+		<div class="max-w-3xl">
+			{{ entry.text }}
+		</div>
+	</div>
+{% endblock %}

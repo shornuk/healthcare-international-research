@@ -1,0 +1,9 @@
+baseUrl: 'http://healthcare-international-research.test/'
+enabled: true
+handle: default
+hasUrls: true
+language: en-GB
+name: 'Healthcare International Research'
+primary: true
+siteGroup: 8cb4965b-31f5-4fcc-9b8c-4a3f6820e48a # Healthcare International Research
+sortOrder: 1

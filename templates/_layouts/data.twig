@@ -1,0 +1,147 @@
+{# -- Root global variables that all templates inherit from -- #}
+{# -- This allows for defining site-wide Twig variables as needed -- #}
+{#
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│                                                                             │
+│                                                                             │
+│                                  htmlPage                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+#}
+{% apply spaceless %}
+
+    {# -- Prefetch & preconnect headers and links -- #}
+{#     {% set prefetchUrls = [
+        alias("@assetsUrl"),
+        alias("@cloudfrontUrl"),
+        alias("@ptGoogleAnalyticsProxy"),
+        alias("@transcodedEpisodes"),
+    ] %} #}
+    {# -- General global variables -- #}
+{#     {% set baseUrl = alias('@cloudfrontUrl') ~ '/' %}
+    {% set assetsUrl = alias('@assetsUrl') ~ '/' %}
+    {% set backgroundUrl = "#{baseUrl}site/devmode-fm-light-bg-opaque.svg" %}
+    {% set footerBackgroundUrl = "#{baseUrl}site/devmode-fm-dark-bg.svg" %}
+    {% set gaTrackingId = getenv('GA_TRACKING_ID') %} #}
+
+    {# -- Twig output from the render; this must be in a block -- #}
+
+    {% set legalPages = [
+        {title: 'Terms', href: 'terms'},
+        {title: 'GDPR', href: 'gdpr'},
+    ] %}
+
+    {% set companyPages = [
+        {title: 'About us', href: 'about'},
+        {title: 'Responsibility', href: 'responsibility'},
+        {title: 'Accreditations', href: 'accreditations'},
+    ] %}
+
+    {% set brandPages = [
+        {title: 'MotherSage', href: 'mothersage'},
+        {title: 'Hempe', href: 'hempe'},
+        {title: 'Brand ambassadors', href: 'brand-ambassadors'},
+        {title: 'Where to find us', href: 'find-us'},
+        {title: 'Vendors', href: 'vendors'},
+        {title: 'Sponsorship', href: 'sponsorship'},
+    ] %}
+
+    {% set informationPages = [
+        {title: 'Research', href: 'research'},
+        {title: 'CBD Explained', href: 'cbd-explained'},
+        {title: 'Glossary', href: 'glossary'},
+    ] %}
+
+    {% set accreditations = [
+        {title: "EU CPNP", href: './dist/img/logos/cpnp.png'},
+        {title: "Office for Product Safety & Standards", href: './dist/img/logos/opss.png'},
+        {title: "Saudi FDA", href: './dist/img/logos/sfda.png'},
+        {title: "Brazilian ANVISA Health Authority", href: './dist/img/logos/anvisa.png'},
+        {title: "Indian CDSCO", href: './dist/img/logos/cdsco.png'},
+        {title: "South African HPRA", href: './dist/img/logos/sahpra.png'},
+    ] %}
+
+    {% set ambassadors = [
+        {
+            name: 'Lynne Franks OBE', 
+            credentials: 'PR Guru & MotherSage Ambassador',
+            text: "I have long been a believer in the healing qualities of CBD and I am delighted to be working with MotherSage on bringing such healing products to public awareness.",
+            href: './dist/img/ambassadors/lynne-franks-mothersage.jpg'
+        },
+        {
+            name: "Dan 'The Beast' Severn", 
+            credentials: "3 x UFC Champion & HEMPE Brand Ambassador", 
+            text: "Being in the combat sport of Cage Fighting, I am used to inflicting pain upon my opponents.....now as I age 'Father Time' has reversed the roles! I want quality of life, and by using Hempe CBD & Muscle, and Joint Gels I have that.",
+            href: './dist/img/ambassadors/dan-beast-hempe.jpg'
+        },
+        {
+            name: 'Magnús Ver Magnússon',
+            credentials: "4 x World's Strongest Man & HEMPE Brand Ambassador",
+            text: "I have tried every product there is to help with my aches and pains, specifically for my knee and nothing has worked. Using Hempe CBD Muscle & Joint Gels are like applying magic...I mean it's unbelievable, my pain literally disappears!!!",
+            href: './dist/img/ambassadors/magnus-hempe.jpg'
+        },
+        {
+            name: 'Flex Wheeler', 
+            credentials: "IFBB Pro Legend & Hempe Brand Ambassador",
+            text: "I have been offered a ridiculous amount of money by other global CBD companies to endorse their products and I don't because they didn't work for me and I won't put my name to something I don't believe in. Hempe CBD Muscle & Joint Gels are the only ones I have tried that truly work in removing my pain.....you've hit a home run!",
+            href: './dist/img/ambassadors/flex-wheeler-hempe.jpg'
+        },
+    ] %}
+
+    {% set sponsors = [
+        {
+            name: 'Army Rugby League', 
+            text: "HEMPE are very proud to be involved in supporting Army Sports Recovery with Army Rugby League.",
+            href: './dist/img/sponsors/army-rugby-league.jpg',
+            logo: './dist/img/sponsors/arl-logo.png',
+        },
+        {
+            name: "Army Motorsport",  
+            text: "HEMPE are very proud to be involved in supporting Army Sports Recovery with both the Army's Sports Car Racing and Motorbike Road Road Race Teams.",
+            href: './dist/img/sponsors/army-motorsport.jpg',
+            logo: './dist/img/sponsors/am-logo.png',
+        },
+        {
+            name: 'Strong Man',
+            text: "HEMPE sponsor a number of Strong Men & Women athletes in partnership with Celtic Strength & Fitness, who have a number of world record holders all of whom use our HEMPE CBD Muscle & Joint Gels to assist in their recovery.",
+            href: './dist/img/sponsors/strong-man.jpg',
+            logo: './dist/img/sponsors/sm-logo.png',
+        },
+        {
+            name: 'New Forest Martial Arts', 
+            text: "Ensuring we give back to the local community, 'grass roots' is very important to us, so HEMPE are very proud to sponsor a local Martial Arts Dojo helping with their recovery of sore muscles and joints.",
+            href: './dist/img/sponsors/new-forest-martial-arts.jpg',
+            logo: './dist/img/sponsors/nfma-logo.png',
+        },
+    ] %}
+
+    {% set events = [
+        {
+            title: 'Glee', 
+            from: '10th Sep 2024', 
+            to: '12th Sep 2024', 
+            text: "The UK’s leading Garden & Outdoor Living Trade Show.",
+            location: "NEC, Birmingham", 
+            href: 'https://google.com'
+        },
+        {
+            title: 'Best Practice Show', 
+            from: '9th Oct 2024', 
+            to: '10th Oct 2024', 
+            text: "The UK’s number one free event for the General Practice and Primary Care communities. Professionals from General Practice and Primary Care keen to update their knowledge and skills via the extensive FREE educational programme as well as experience the latest products and services.",
+            location: "NEC, Birmingham", 
+            href: 'https://google.com'
+        },
+        {
+            title: 'Olympia Beauty', 
+            from: '13th Oct 2024', 
+            to: '13th Oct 2024', 
+            text: "Autumn's biggest beauty event, Olympia Beauty brings beauty professionals the brands, treatments and education, plus endless networking opportunities.",
+            location: "Excel, London", 
+            href: 'https://google.com'
+        },
+    ] %}
+    {% block htmlPage %}
+    {% endblock %}
+
+{% endapply %}

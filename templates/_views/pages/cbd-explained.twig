@@ -1,0 +1,15 @@
+{% extends "_layouts/base" %}
+
+{% set meta = {
+	eyebrow: 'Information',
+	title: entry.title,
+	text: 'We help explain the science, benefits and myths and behind cannabanoid topicals.'
+} %}
+
+{% block content %}
+	<div class="mx-auto max-w-7xl px-6 lg:px-8 prose prose-slate dark:prose-invert">
+		<div class="max-w-3xl">
+			{{ entry.text }}
+		</div>
+	</div>
+{% endblock %}

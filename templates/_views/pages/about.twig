@@ -1,0 +1,17 @@
+{% extends "_layouts/base" %}
+
+{% set gradient = true %}
+
+{% set meta = {
+	eyebrow: 'Our company',
+	title: entry.title,
+	text: 'HIR leads in cannabinoid cosmetics, using over 60 years of Czech research. Our products are GMP certified, ensuring high quality and safety.'
+} %}
+
+{% block content %}
+	<div class="mx-auto max-w-7xl px-6 lg:px-8 prose prose-slate dark:prose-invert">
+		<div class="max-w-3xl">
+			{{ entry.text }}
+		</div>
+	</div>
+{% endblock %}

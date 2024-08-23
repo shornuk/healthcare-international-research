@@ -1,0 +1,17 @@
+{% extends "_layouts/base" %}
+
+{% set gradient = true %}
+
+{% set meta = {
+	eyebrow: 'Our company',
+	title: entry.title,
+	text: 'Our values as a company are based on an underlying respect for nature and the environment, from our ingredients through to the raw materials we use in our packaging.'
+} %}
+
+{% block content %}
+	<div class="mx-auto max-w-7xl px-6 lg:px-8 prose prose-slate dark:prose-invert">
+		<div class="max-w-3xl">
+			{{ entry.text }}
+		</div>
+	</div>
+{% endblock %}
