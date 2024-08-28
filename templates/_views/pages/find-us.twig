@@ -14,8 +14,6 @@
 {% block content %}
  	<div class="mx-auto max-w-7xl px-6 lg:px-8">
     	<div class="flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
-      		
-      		
       		<div class="w-full lg:max-w-xl lg:flex-auto">
         		{% if events %}
 			        <ul>
@@ -33,7 +31,11 @@
 				              			{% endif %}
 			              			</dd>
 			              			<dt class="sr-only">When</dt>
-			              			<dd class="mt-4 text-base font-semibold leading-7 text-slate-900 dark:text-white">{{ event.startDate|date }}{% if event.endDate %} &rarr; {{ event.endDate|date }}{% endif %}</dd>
+			              			<dd class="mt-4 text-base font-semibold leading-7 text-slate-900 dark:text-white">
+			              				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline size-6 mb-1 text-[#40B8BA]">
+  											<path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+										</svg>
+			              				{{ event.startDate|date }}{% if event.endDate %} - {{ event.endDate|date }}{% endif %}</dd>
 			              			<dt class="sr-only">Location</dt>
 			             			<dd class="mt-4 flex items-center gap-x-3 text-base leading-7 text-slate-500 dark:text-white/80">
 						                <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 flex-none fill-gray-300" aria-hidden="true">
@@ -48,9 +50,6 @@
 		        {% else %}
 		        	<p>No upcoming events</p>
 		        {% endif %}
-        		{# <div class="mt-8 flex border-t border-gray-100 pt-8">
-          			<a href="#" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">View all openings <span aria-hidden="true">&rarr;</span></a>
-       			</div> #}
       		</div>
     	</div>
   	</div>

@@ -1352,6 +1352,18 @@ select {
 .mb-6 {
   margin-bottom: 1.5rem;
 }
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.mb-0 {
+  margin-bottom: 0px;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .block {
   display: block;
 }
@@ -1401,6 +1413,10 @@ select {
 .size-8 {
   width: 2rem;
   height: 2rem;
+}
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 .h-0\.5 {
   height: 0.125rem;
@@ -1838,6 +1854,10 @@ select {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1939,6 +1959,12 @@ select {
 }
 .font-semibold {
   font-weight: 600;
+}
+.font-normal {
+  font-weight: 400;
+}
+.italic {
+  font-style: italic;
 }
 .not-italic {
   font-style: normal;
@@ -2292,6 +2318,10 @@ select {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:gap-8 {
