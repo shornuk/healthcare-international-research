@@ -108,6 +108,60 @@ fieldLayouts:
         name: Content
         uid: 01455ad0-625e-47c5-877c-0c29db1a5074
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-08-28T22:38:30+00:00'
+            elementCondition: null
+            fieldUid: 6ba08a18-cefd-493b-be25-ba634a67d787 # SEO Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 027189f5-8c1f-4465-bd54-98b034f2fb24
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-28T22:38:30+00:00'
+            elementCondition: null
+            fieldUid: cc21e5aa-4f58-422f-ace2-09ade4574993 # SEO Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61bbf55e-c745-48fa-9c68-13bccbaa1270
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-28T22:38:30+00:00'
+            elementCondition: null
+            fieldUid: 0cbecadd-ee18-404d-b340-501f913e1d53 # SEO Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9e08aeda-4a02-4014-95ed-df491b1649b2
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 2ce690cf-437e-4641-8f2d-af7aa1f36cec
+        userCondition: null
 handle: brand
 hasTitleField: true
 icon: ''

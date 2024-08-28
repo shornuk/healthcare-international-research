@@ -23,6 +23,60 @@ fieldLayouts:
         name: Defaults
         uid: 8d7493cf-1959-4829-a7f4-365f45535b09
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-08-28T22:37:24+00:00'
+            elementCondition: null
+            fieldUid: 6ba08a18-cefd-493b-be25-ba634a67d787 # SEO Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 964b8ebf-9551-4ec2-9c29-2147b21f7d4b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-28T22:37:24+00:00'
+            elementCondition: null
+            fieldUid: 0cbecadd-ee18-404d-b340-501f913e1d53 # SEO Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1c8f6095-1d6b-4dcb-b7cd-f453ab0518e4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-28T22:37:24+00:00'
+            elementCondition: null
+            fieldUid: cc21e5aa-4f58-422f-ace2-09ade4574993 # SEO Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d135cae6-7f85-4df9-ba34-31ffd68dde12
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 69d58bcf-849c-4271-8f05-1cc0a1cfec29
+        userCondition: null
 handle: defaults
 name: Defaults
 sortOrder: 1

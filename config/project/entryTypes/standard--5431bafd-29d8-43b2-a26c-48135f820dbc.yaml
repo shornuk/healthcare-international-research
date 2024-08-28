@@ -126,6 +126,60 @@ fieldLayouts:
         name: Content
         uid: 68c726f9-f8d6-49ce-8501-242143f28396
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-08-28T22:37:54+00:00'
+            elementCondition: null
+            fieldUid: 6ba08a18-cefd-493b-be25-ba634a67d787 # SEO Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a75f964-dc5d-43fa-93fa-b22692ef49be
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-28T22:37:54+00:00'
+            elementCondition: null
+            fieldUid: 0cbecadd-ee18-404d-b340-501f913e1d53 # SEO Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 44e4760b-d015-4631-ac1a-3295dbb332cf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-28T22:37:54+00:00'
+            elementCondition: null
+            fieldUid: cc21e5aa-4f58-422f-ace2-09ade4574993 # SEO Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4ae152d7-ba55-4893-9d70-d9d9804a1843
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 051c978e-fa8e-4b66-b2eb-8af59135eefa
+        userCondition: null
 handle: standard
 hasTitleField: true
 icon: ''

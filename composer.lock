@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "09c3939deed6017ae8284bf233ad03b2",
+    "content-hash": "086dacb8122902b3aea9de189ac8e40f",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2583,6 +2583,50 @@
             "time": "2020-12-15T21:32:01+00:00"
         },
         {
+            "name": "spatie/schema-org",
+            "version": "3.23.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/schema-org/zipball/c95abf7da59f16570aec18ca11d861255e645c39",
+                "reference": "c95abf7da59f16570aec18ca11d861255e645c39",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\SchemaOrg\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Tom Witkowski",
+                    "email": "dev.gummibeer@gmail.com",
+                    "homepage": "https://gummibeer.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A fluent builder Schema.org types and ld+json generator",
+            "homepage": "https://github.com/spatie/schema-org",
+            "keywords": [
+                "schema-org",
+                "spatie"
+            ],
+            "time": "2024-01-11T14:58:44+00:00"
+        },
+        {
             "name": "spomky-labs/cbor-php",
             "version": "3.1.0",
             "dist": {
@@ -4199,6 +4243,61 @@
                 "templating"
             ],
             "time": "2023-11-21T18:54:41+00:00"
+        },
+        {
+            "name": "vaersaagod/seomate",
+            "version": "3.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vaersaagod/seomate/zipball/4cc4b18fa4808d7e2b83444bace3bd388a8d405c",
+                "reference": "4cc4b18fa4808d7e2b83444bace3bd388a8d405c",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0",
+                "php": "^8.2",
+                "spatie/schema-org": "^2.0|^3.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "SEOMate",
+                "handle": "seomate",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/vaersaagod/seomate/master/CHANGELOG.md",
+                "components": [],
+                "class": "vaersaagod\\seomate\\SEOMate"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vaersaagod\\seomate\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Værsågod",
+                    "homepage": "https://www.vaersaagod.no/"
+                }
+            ],
+            "description": "SEO, mate! It's important.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "json-ld",
+                "meta",
+                "seo",
+                "seomate"
+            ],
+            "support": {
+                "docs": "https://github.com/vaersaagod/seomate/blob/master/README.md",
+                "issues": "https://github.com/vaersaagod/seomate/issues"
+            },
+            "time": "2024-08-23T22:43:37+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
