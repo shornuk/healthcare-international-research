@@ -3,12 +3,12 @@
 {% set meta = {
 	eyebrow: 'Want to know more?',
 	title: entry.title,
-	text: entry.title
+	text: entry.overview
 } %}
 
 {% block content %}
 
- <div class="mx-auto max-w-7xl">
+ {# <div class="mx-auto max-w-7xl">
     <div class="relative px-6 pb-20 lg:px-8">
      	<div class="max-w-xl lg:mx-0 lg:max-w-lg">
               
@@ -65,7 +65,28 @@
      	
      	</div>
     </div>
- </div>
+ </div> #}
+
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+    	
+    	<div>
+    		<h3 class="border-l border-[#40B8BA] pl-6 font-semibold text-slate-900 dark:text-white">UK</h3>
+    		<address class="border-l border-gray-200 dark:border-slate-700 pl-6 pt-2 not-italic text-slate-600 dark:text-white/80">
+    			<p>Healthcare International Research Limited</p>
+				<p>
+					Unit 18, Axis 31<br>
+					Woolsbridge Industrial Park<br>
+					Oakfield Road<br>
+					Wimborne<br>
+					Dorset<br>
+					BH21 6FE
+				</p>
+    		</address>
+    	</div>
+    </div>
+  </div>
+
 
 
 {% endblock %}
