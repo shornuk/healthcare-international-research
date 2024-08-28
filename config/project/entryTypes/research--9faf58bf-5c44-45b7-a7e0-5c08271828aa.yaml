@@ -1,0 +1,105 @@
+color: null
+fieldLayouts:
+  94374abc-0302-4a7a-907d-abd546017cf6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-28T21:48:18+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: fab67a49-fccc-4717-a9c8-8d97deaaf462
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-28T21:50:00+00:00'
+            elementCondition: null
+            fieldUid: ace47efd-105d-41d5-8d5f-55a57c7ba41e # Overview
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d36dd8df-21c6-4771-8585-092479ec2889
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-28T21:50:00+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 44a4c172-15d2-409d-b3cb-2108eacdc510
+            userCondition: null
+          -
+            dateAdded: '2024-08-28T21:50:00+00:00'
+            elementCondition: null
+            fieldUid: d2d8e874-9460-48c8-beed-355df0e4a564 # Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: babb5a42-77dc-4a56-a363-9babcdf02778
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-28T21:50:00+00:00'
+            elementCondition: null
+            fieldUid: b569a424-dcb9-4020-812d-807d38655abf # Documents
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'White Papers'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 51b1cd81-8c9a-4761-be3d-96bfdd69bdf6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e1148d35-eb6a-44bc-a800-b048311719d8
+        userCondition: null
+handle: research
+hasTitleField: true
+icon: ''
+name: Research
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

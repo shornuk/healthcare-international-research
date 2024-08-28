@@ -3,6 +3,7 @@ enableVersioning: true
 entryTypes:
   - 5431bafd-29d8-43b2-a26c-48135f820dbc # Standard
   - 342272a1-1d3a-4d4c-b9b9-77b13acf6984 # Brand
+  - 9faf58bf-5c44-45b7-a7e0-5c08271828aa # Research
 handle: pages
 maxAuthors: 1
 name: Pages

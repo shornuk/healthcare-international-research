@@ -6,11 +6,13 @@
 	text: entry.overview
 } %}
 
-{% set researchPapers = craft.assets()
+{# {% set researchPapers = craft.assets()
 	.volume('documents')
 	.orderBy('subtitle')
 	.all()
-%}
+%} #}
+
+{% set researchPapers = entry.documents.orderBy('subtitle').all() %}
 
 {% set gradient = true %}
 
