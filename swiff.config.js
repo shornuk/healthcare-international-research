@@ -9,10 +9,10 @@ module.exports = {
         // The SSH login username
         user: 'forge',
         // The IP/hostname of the remote server (eg: 100.100.100.100)
-        host: '178.79.164.152',
+        host: '139.162.233.36',
         // The working directory of the remote app folder
         // eg: /srv/users/[user]/apps/[app]
-        appPath: '/home/forge/walkiees.co.uk/',
+        appPath: '/home/forge/staging.healthcare-international-research.com/',
         // The SSH port to connect on (22 is the SSH default)
         port: 22,
     },
@@ -22,6 +22,7 @@ module.exports = {
     // Folders to pull new or changed files from
     // eg: pullFolders: ['public/assets/volumes'],
     pullFolders: [
+        'web/assets',
         'storage/rebrand'
     ],
 }
