@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  c40fa6b4-9963-49b1-827d-c533a4434a3c:
+  8d85c036-c02c-41a9-a240-7387077408ac:
     tabs:
       -
         elementCondition: null
@@ -10,14 +10,14 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-08-22T14:39:39+00:00'
+            dateAdded: '2024-08-28T16:23:50+00:00'
             disabled: false
             elementCondition: null
             id: null
             includeInCards: false
             inputType: null
             instructions: null
-            label: null
+            label: 'Event Name'
             max: null
             min: null
             name: null
@@ -31,12 +31,28 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 269b325f-f7b0-41fb-946a-2cbd502f145a
+            uid: 381f1d6b-459b-4c89-b8df-f2aad532fa6c
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-28T09:26:18+00:00'
+            dateAdded: '2024-08-28T16:27:56+00:00'
+            elementCondition: null
+            fieldUid: f72b528d-6b33-4330-aa32-e66eaebc9164 # Subtitle
+            handle: location
+            includeInCards: false
+            instructions: null
+            label: Location
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e284d10e-5a96-42b5-98f5-e8b08300fa48
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-28T16:27:56+00:00'
             elementCondition: null
             fieldUid: ace47efd-105d-41d5-8d5f-55a57c7ba41e # Overview
             handle: null
@@ -47,20 +63,30 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ae8b8f1f-a4f8-4b06-accf-6198ba0bd899
+            uid: 1f9cd461-d958-4cd3-b385-c367a0d2703d
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-28T09:26:18+00:00'
+            dateAdded: '2024-08-28T16:27:56+00:00'
             elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: babc85f0-2210-4aab-9f05-c2b3774e2ada
+            fieldUid: 7fd658cb-e8ae-46cd-8c3d-52af5f71352f # Start Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9f37da29-ea5a-429a-8a34-a171fba8b527
             userCondition: null
+            warning: null
+            width: 100
           -
-            dateAdded: '2024-08-22T23:36:03+00:00'
+            dateAdded: '2024-08-28T16:27:56+00:00'
             elementCondition: null
-            fieldUid: d2d8e874-9460-48c8-beed-355df0e4a564 # Text
+            fieldUid: 07c2344d-19d1-4f25-a166-64c27853ab9d # Multi Day?
             handle: null
             includeInCards: false
             instructions: null
@@ -69,48 +95,40 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 97874c47-3ae0-484f-b09d-1c11f5da9834
+            uid: cba8a5bc-9cec-47d9-ab69-b73945230c33
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-28T09:58:45+00:00'
+            dateAdded: '2024-08-28T16:27:56+00:00'
             elementCondition:
               class: craft\elements\conditions\entries\EntryCondition
               conditionRules:
                 -
-                  class: craft\elements\conditions\SlugConditionRule
-                  operator: '='
-                  uid: 58c5e1ad-61ba-4f66-b55d-1ac4ccfd29ee
-                  value: brand-ambassadors
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 07c2344d-19d1-4f25-a166-64c27853ab9d # Multi Day?
+                  layoutElementUid: cba8a5bc-9cec-47d9-ab69-b73945230c33
+                  uid: a97a6214-a59e-4d31-9606-3e1232cf2a3f
+                  value: true
               elementType: craft\elements\Entry
               fieldContext: global
-            fieldUid: 57737f4b-6c39-496e-bd34-06936ecbce43 # Brand Ambassadors
-            handle: null
+            fieldUid: 7fd658cb-e8ae-46cd-8c3d-52af5f71352f # Start Date
+            handle: endDate
             includeInCards: false
             instructions: null
-            label: null
+            label: 'End Date'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: df035f96-b65f-4edb-b7f5-0a5b79c46863
+            uid: d2e44ef5-09aa-4583-b581-24ddf978687c
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-28T13:51:44+00:00'
-            elementCondition:
-              class: craft\elements\conditions\entries\EntryCondition
-              conditionRules:
-                -
-                  class: craft\elements\conditions\SlugConditionRule
-                  operator: '='
-                  uid: 2ed91a16-e361-4e1e-b087-ab2af30804d6
-                  value: sponsorship
-              elementType: craft\elements\Entry
-              fieldContext: global
-            fieldUid: 0cdf5e66-0279-4f0a-8f0f-06c654bfc5ac # Sponsorships
+            dateAdded: '2024-08-28T16:27:56+00:00'
+            elementCondition: null
+            fieldUid: 69c03b0f-93dd-41d5-b683-4c65029a399a # Event Website
             handle: null
             includeInCards: false
             instructions: null
@@ -119,43 +137,18 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 11821d50-0f35-4828-9e5a-1442308bb991
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-08-28T16:30:21+00:00'
-            elementCondition:
-              class: craft\elements\conditions\entries\EntryCondition
-              conditionRules:
-                -
-                  class: craft\elements\conditions\SlugConditionRule
-                  operator: '='
-                  uid: 897db8e4-02ff-4c13-b15b-9ce91f58da7a
-                  value: find-us
-              elementType: craft\elements\Entry
-              fieldContext: global
-            fieldUid: 8cf86d52-5138-4673-9caf-1ab9401a623c # Events
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b5365edd-26d2-4643-a1f6-a18ab475b284
+            uid: 9c571fdf-cf96-454e-8059-f62a2f3cb57e
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 68c726f9-f8d6-49ce-8501-242143f28396
+        uid: e6987148-d3dc-4fd6-afec-88c6ce103eb1
         userCondition: null
-handle: standard
+handle: event
 hasTitleField: true
 icon: ''
-name: Standard
-showSlugField: true
+name: Event
+showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

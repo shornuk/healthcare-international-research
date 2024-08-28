@@ -1,4 +1,4 @@
-dateModified: 1724855191
+dateModified: 1724863007
 elementSources:
   craft\elements\Asset:
     -
@@ -65,6 +65,18 @@ elementSources:
     -
       key: 'section:1a9a25d9-faab-4ef2-8068-c2f61ba2fe83' # Sponsorships
       type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:4c390422-fe27-4399-a798-28842880cd8b' # Events
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
 email:
   fromEmail: me@shorn.co.uk
   fromName: 'Healthcare International Research'
@@ -81,8 +93,13 @@ meta:
   __names__:
     0cdf5e66-0279-4f0a-8f0f-06c654bfc5ac: Sponsorships # Sponsorships
     1a9a25d9-faab-4ef2-8068-c2f61ba2fe83: Sponsorships # Sponsorships
+    4c390422-fe27-4399-a798-28842880cd8b: Events # Events
     6c1f48e9-4588-4100-8f79-5410aacc580e: 'Healthcare International Research' # Healthcare International Research
+    07c2344d-19d1-4f25-a166-64c27853ab9d: 'Multi Day?' # Multi Day?
+    7fd658cb-e8ae-46cd-8c3d-52af5f71352f: 'Start Date' # Start Date
     8cb4965b-31f5-4fcc-9b8c-4a3f6820e48a: 'Healthcare International Research' # Healthcare International Research
+    8cf86d52-5138-4673-9caf-1ab9401a623c: Events # Events
+    69c03b0f-93dd-41d5-b683-4c65029a399a: 'Event Website' # Event Website
     208c7680-47e0-46c7-9b9f-27851975835d: Pages # Pages
     778c4b04-b6ad-49b4-9178-86911f2aaee1: Sponsorship # Sponsorship
     955fe759-5ee7-4082-b22a-42b3712b6cd8: Published # Published
@@ -90,6 +107,7 @@ meta:
     57737f4b-6c39-496e-bd34-06936ecbce43: 'Brand Ambassadors' # Brand Ambassadors
     438243f5-3528-40db-89f7-320c3bb39e29: Photo # Photo
     a26097f1-8675-4718-a4e2-2dea2e29ee99: Defaults # Defaults
+    a5524528-c323-41f0-9271-c50a0c48b04d: Event # Event
     aa418ba7-b818-4669-8693-5e4caac625e4: Documents # Documents
     ace47efd-105d-41d5-8d5f-55a57c7ba41e: Overview # Overview
     c08c5155-2407-43fe-ae29-0b430dbeb19c: Simple # Simple
