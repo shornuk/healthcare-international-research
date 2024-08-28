@@ -14,7 +14,7 @@ settings:
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
   maxRelations: 1
-  minRelations: 1
+  minRelations: null
   previewMode: full
   restrictFiles: true
   restrictLocation: false
@@ -23,14 +23,14 @@ settings:
   restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:
     - 'volume:fee9d930-a30a-442b-848c-4a14f56c589d' # Images
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: large
+  viewMode: cards
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Assets

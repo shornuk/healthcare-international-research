@@ -1,0 +1,28 @@
+fieldLayouts:
+  731ebd14-ef16-417f-a1be-b99a1782cf69:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-08-28T14:02:55+00:00'
+            elementCondition: null
+            fieldUid: 438243f5-3528-40db-89f7-320c3bb39e29 # Photo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Image placeholder'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 25d61348-2d8b-4e3e-bd4a-afe15609bbb4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Defaults
+        uid: 8d7493cf-1959-4829-a7f4-365f45535b09
+        userCondition: null
+handle: defaults
+name: Defaults
+sortOrder: 1

@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 778c4b04-b6ad-49b4-9178-86911f2aaee1 # Sponsorship
+handle: sponsorships
+maxAuthors: 1
+name: Sponsorships
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  6c1f48e9-4588-4100-8f79-5410aacc580e: # Healthcare International Research
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

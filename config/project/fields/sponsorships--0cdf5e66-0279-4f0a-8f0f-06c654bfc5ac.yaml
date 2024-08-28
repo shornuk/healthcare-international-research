@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: sponsorships
+instructions: null
+name: Sponsorships
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: 1
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:1a9a25d9-faab-4ef2-8068-c2f61ba2fe83' # Sponsorships
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

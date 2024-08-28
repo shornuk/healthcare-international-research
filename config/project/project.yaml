@@ -1,4 +1,4 @@
-dateModified: 1724839632
+dateModified: 1724853905
 elementSources:
   craft\elements\Asset:
     -
@@ -44,13 +44,17 @@ fs:
     url: $ASSETS_URL
 meta:
   __names__:
+    0cdf5e66-0279-4f0a-8f0f-06c654bfc5ac: Sponsorships # Sponsorships
+    1a9a25d9-faab-4ef2-8068-c2f61ba2fe83: Sponsorships # Sponsorships
     6c1f48e9-4588-4100-8f79-5410aacc580e: 'Healthcare International Research' # Healthcare International Research
     8cb4965b-31f5-4fcc-9b8c-4a3f6820e48a: 'Healthcare International Research' # Healthcare International Research
     208c7680-47e0-46c7-9b9f-27851975835d: Pages # Pages
+    778c4b04-b6ad-49b4-9178-86911f2aaee1: Sponsorship # Sponsorship
     955fe759-5ee7-4082-b22a-42b3712b6cd8: Published # Published
     5431bafd-29d8-43b2-a26c-48135f820dbc: Standard # Standard
     57737f4b-6c39-496e-bd34-06936ecbce43: 'Brand Ambassadors' # Brand Ambassadors
     438243f5-3528-40db-89f7-320c3bb39e29: Photo # Photo
+    a26097f1-8675-4718-a4e2-2dea2e29ee99: Defaults # Defaults
     aa418ba7-b818-4669-8693-5e4caac625e4: Documents # Documents
     ace47efd-105d-41d5-8d5f-55a57c7ba41e: Overview # Overview
     c08c5155-2407-43fe-ae29-0b430dbeb19c: Simple # Simple

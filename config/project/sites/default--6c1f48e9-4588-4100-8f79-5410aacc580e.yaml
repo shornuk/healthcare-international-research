@@ -1,4 +1,4 @@
-baseUrl: 'http://healthcare-international-research.test/'
+baseUrl: 'http://staging.healthcare-international-research.com/'
 enabled: true
 handle: default
 hasUrls: true
