@@ -1,0 +1,36 @@
+{% extends "_layouts/base" %}
+
+{% set meta = {
+	eyebrow: 'Our brands',
+	title: entry.title,
+	text: entry.overview
+} %}
+
+{% set photo = entry.photo.one()|default(defaults.photo.one()) %}
+
+{% block content %}
+
+<div class="pt-12 mx-auto max-w-7xl px-6 lg:px-8">
+	<div class=" grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+  		<div class="lg:pr-4">
+    		<div class="relative overflow-hidden rounded-3xl aspect-video w-full lg:aspect-square px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+      			<img class="absolute inset-0 h-full w-full object-cover object-center aspect-square " src="{{ photo.url }}" alt="{{ entry.title }}">
+      		</div>
+  		</div>
+      	<div>
+	    	<div class="text-base leading-7 text-slate-700 dark:text-white/80 lg:max-w-lg">
+	    		<p class="text-base font-semibold leading-7 text-[#40B8BA]">{{ entry.brandWebsite|replace('https://', '') }}</p>
+	      		<h2 class="pt-2 mb-6 text-2xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-3xl">About {{ entry.title }}</h2>
+	      		<div class="max-w-xl prose dark:prose-invert">
+	        		{{ entry.text }}
+	      		</div>
+	    	</div>
+	    	<div class="mt-10 flex">
+	      		<a href="{{ entry.brandWebsite }}" class="text-base font-semibold leading-7 text-[#40B8BA]">Visit {{ entry.brandWebsite|replace('https://', '') }} <span aria-hidden="true">&rarr;</span></a>
+	    	</div>
+      	</div>
+	</div>
+</div>
+
+	
+{% endblock %}
