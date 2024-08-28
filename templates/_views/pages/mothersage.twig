@@ -3,7 +3,7 @@
 {% set meta = {
 	eyebrow: 'Our brands',
 	title: entry.title,
-	text: 'CBD, when expertly combined with other natural ingredients, can drive a true evolution in skincare products.'
+	text: entry.overview
 } %}
 
 {% block content %}
@@ -21,10 +21,10 @@
 		      		<h2 class="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">About MotherSage</h2>
 		      		<div class="max-w-xl">
 		        		<p class="mt-6">MotherSage is a range of high-quality, invigorating and relaxing CBD skincare products formulated with the very best natural ingredients to help alleviate common skin ailments resulting in firmer, healthier skin.</p>
-		        		<p class="mt-8">CBD skincare products were to be formulated properly and were to include all of the other fantastic natural oxidants and natural anti-inflammatories that nature has to offer – the resulting SkinCare products could really add something new to the market. MotherSage™ was born. </p>
+		        		<p class="mt-8">CBD skincare products were to be formulated properly and were to include all of the other fantastic natural oxidants and natural anti-inflammatories that nature has to offer – the resulting SkinCare products could really add something new to the market. MotherSage was born. </p>
 		      		</div>
 		    	</div>
-		    	<dl class="mt-10 grid grid-cols-2 gap-8 pt-10 sm:grid-cols-3">
+		    	{# <dl class="mt-10 grid grid-cols-2 gap-8 pt-10 sm:grid-cols-3">
 		      		<div>
 		        		<dt class="text-sm font-semibold leading-6 text-gray-600">Founded</dt>
 		        		<dd class="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">2021</dd>
@@ -37,7 +37,7 @@
 		        		<dt class="text-sm font-semibold leading-6 text-gray-600">Countries available in</dt>
 		        		<dd class="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">12</dd>
 		      		</div>
-		    	</dl>
+		    	</dl> #}
 		    	<div class="mt-10 flex">
 		      		<a href="https://mothersage.com" class="text-base font-semibold leading-7 text-[#40B8BA]">Visit mothersage.com <span aria-hidden="true">&rarr;</span></a>
 		    	</div>

@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: brandAmbassadors
+instructions: null
+name: 'Brand Ambassadors'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  sources:
+    - 'section:e9bef2d0-c995-4129-83cf-23be772574b0' # Brand Ambassadors
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

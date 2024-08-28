@@ -3,20 +3,29 @@
 {% set meta = {
 	eyebrow: 'Information',
 	title: entry.title,
-	text: 'View our white papers and interesting developments and information regarding the CBD industry and HIR.'
+	text: entry.overview
 } %}
+
+{% set researchPapers = craft.assets()
+	.volume('documents')
+	.orderBy('subtitle')
+	.all()
+%}
 
 {% set gradient = true %}
 
 {% block content %}
 
-	{% set researchPapers = craft.assets()
-		.volume('documents')
-		.orderBy('subtitle')
-		.all()
-	%}
+	<div class="mx-auto max-w-7xl px-6 lg:px-8 prose prose-slate dark:prose-invert">
+		{% if entry.text ?? false %}
+			<div class="max-w-3xl">
+				{{ entry.text }}
+			</div>
+		{% endif %}
+	</div>
   	
   	<div class="mx-auto max-w-7xl px-6 lg:px-8">
+
     	<div class="grid grid-cols-1 gap-x-8 gap-y-16 max-w-none lg:grid-cols-3">
 
     		{% for paper in researchPapers %}

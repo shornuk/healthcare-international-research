@@ -3,88 +3,17 @@
 {% set meta = {
 	eyebrow: 'Information',
 	title: entry.title,
-	text: 'A glossary of key bio-active ingredients found within our product ranges.'
+	text: entry.overview
 } %}
 
 {% block content %}
 
 	<div class="mx-auto max-w-7xl px-6 lg:px-8 prose prose-slate dark:prose-invert">
-
-		<div class="max-w-4xl">
-			<h3>CBD</h3>
-			<p>Strong anti-inflammatory properties and fights free radicals, created in the skin by UV radiation. Actively provides antimicrobial effect on the skin, suppresses pain and stimulates the healing process.</p>
-
-			<h3>Argan Oil</h3>
-			<p> Naturally occurring plant oil that hydrates and softens skin and is a great natural moisturiser. Antioxidant effects and restores elasticity to skin.
-			</p>
-
-			<h3>Cannabis Seed Oil</h3>
-			<p> Contains unsaturated fatty acids with strong anti- inflammatory properties.
-			</p>
-
-			<h3>Clove Oil</h3>
-			<p> Extremely high antioxidant content, antimicrobial, antifungal, antiseptic, antiviral, aphrodisiac and stimulates the skin.
-			</p>
-
-			<h3>Epsom Salt</h3>
-			<p> Contains magnesium which is one of the three essential minerals for total body function and can help with muscle recovery and promotes sleep.
-			</p>
-
-			<h3>Eucalyptus Oil</h3>
-			<p> Eases breathing and improves respiratory infection, reduces pain and muscle tension, supports the antimicrobial action.
-			</p>
-
-			<h3>Hemp Seed Oil</h3>
-			<p> Rich in essential fatty acids and phytonutrients. Appreciated for its anti-inflammatory properties, supports skin’s barrier function, calms eczema and atopic dermatitis.
-			</p>
-
-			<h3>Jojoba Oil</h3>
-			<p> Rich in vitamins E and B. Improves the overall condition of the skin and increases its immunity.
-			</p>
-
-			<h3>Laurus Nobilis Oil</h3>
-			<p> Antimicrobial, analgesic and anti-inflammatory properties.
-			</p>
-
-			<h3>Lavender</h3>
-			<p> Antiseptic and soothing properties. It helps to prevent infection and irritation, contributes to relaxation.
-			</p>
-
-			<h3>Peppermint Oil</h3>
-			<p> Pure and natural essential oil of mentha piperita helps to reduce pain, anti-inflammatory, encourages circulation and contributes to cleansing and toning for skin.
-			</p>
-
-			<h3>Pinus Sylvestris Oil</h3>
-			<p> Analgesic, anti- inflammatory, neurotonic properties.
-			</p>
-
-			<h3>Sea Buckthorn Oil</h3>
-			<p> Naturally full of antioxidants, rich in various minerals and vitamins such as vitamin E and betacarotene, provides all four omega fatty acids, calms and regenerates inflamed skin.
-			</p>
-
-			<h3>Sea Salt</h3>
-			<p> Abundant in minerals, a great source of micronutrients, promotes brain, muscleandnervoussystemfunction,filled with electrolytes.
-			</p>
-
-			<h3>Shea Butter</h3>
-			<p> Excellent moisturising, soothing, nourishing and protective properties. Rich in vitamin A and E and highly regarded as an effective remedy for dry and damaged skin.
-			</p>
-
-			<h3>Squalane</h3>
-			<p> Powerful anti-aging and anti- inflammatory ingredient. It supports blood circulation and helps with skin conditions such as eczema, acne and rough skin.
-			</p>
-
-			<h3>V-Complex™</h3>
-			<p> Essential oils of lemon, cypress, lavandin grosso, mentha arvansis and cistus ladaniferus with clinically proven efficacy to bring relief and refreshment to heavy and painful legs. 
-			</p>
-
-			<p>Immediately after application brings feeling of coolness, relaxing effect and pain relief.
-			</p>
-
-			<h3>Vitamin E</h3>
-			<p> One of the most important antioxidants responsible for healing and recovery. It slows cellular ageing and significantly supports the immune system.
-			</p>
-		</div>
+		{% if entry.text ?? false %}
+			<div class="max-w-3xl">
+				{{ entry.text }}
+			</div>
+		{% endif %}
 	</div>
 	
 {% endblock %}

@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  c40fa6b4-9963-49b1-827d-c533a4434a3c:
+  3ed04b44-cb7b-4b3a-8327-66ba3565ccb7:
     tabs:
       -
         elementCondition: null
@@ -10,14 +10,14 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-08-22T14:39:39+00:00'
+            dateAdded: '2024-08-28T09:52:47+00:00'
             disabled: false
             elementCondition: null
             id: null
             includeInCards: false
             inputType: null
             instructions: null
-            label: null
+            label: Name
             max: null
             min: null
             name: null
@@ -31,81 +31,66 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 269b325f-f7b0-41fb-946a-2cbd502f145a
+            uid: 360e3acc-e6f8-4353-be3e-1324a3a33d1c
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-28T09:26:18+00:00'
+            dateAdded: '2024-08-28T10:03:34+00:00'
+            elementCondition: null
+            fieldUid: 438243f5-3528-40db-89f7-320c3bb39e29 # Photo
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f2463eb7-db1c-4c3b-8ec9-014685cf5d4f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-28T09:55:24+00:00'
+            elementCondition: null
+            fieldUid: f72b528d-6b33-4330-aa32-e66eaebc9164 # Subtitle
+            handle: credentials
+            includeInCards: false
+            instructions: null
+            label: Credentials
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c360500-80b2-43f1-89a3-c176d2453877
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-28T09:55:24+00:00'
             elementCondition: null
             fieldUid: ace47efd-105d-41d5-8d5f-55a57c7ba41e # Overview
-            handle: null
+            handle: text
             includeInCards: false
             instructions: null
-            label: null
+            label: Quote
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ae8b8f1f-a4f8-4b06-accf-6198ba0bd899
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-08-28T09:26:18+00:00'
-            elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: babc85f0-2210-4aab-9f05-c2b3774e2ada
-            userCondition: null
-          -
-            dateAdded: '2024-08-22T23:36:03+00:00'
-            elementCondition: null
-            fieldUid: d2d8e874-9460-48c8-beed-355df0e4a564 # Text
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 97874c47-3ae0-484f-b09d-1c11f5da9834
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-08-28T09:58:45+00:00'
-            elementCondition:
-              class: craft\elements\conditions\entries\EntryCondition
-              conditionRules:
-                -
-                  class: craft\elements\conditions\SlugConditionRule
-                  operator: '='
-                  uid: 58c5e1ad-61ba-4f66-b55d-1ac4ccfd29ee
-                  value: brand-ambassadors
-              elementType: craft\elements\Entry
-              fieldContext: global
-            fieldUid: 57737f4b-6c39-496e-bd34-06936ecbce43 # Brand Ambassadors
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: df035f96-b65f-4edb-b7f5-0a5b79c46863
+            uid: 0a87f3be-5c08-4dab-bf5b-4abbb6225fd7
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 68c726f9-f8d6-49ce-8501-242143f28396
+        uid: 7ebd7969-d393-4777-98d4-b16f777fbaf4
         userCondition: null
-handle: standard
+handle: brandAmbassador
 hasTitleField: true
 icon: ''
-name: Standard
-showSlugField: true
+name: 'Brand Ambassador'
+showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

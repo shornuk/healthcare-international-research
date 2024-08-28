@@ -3,15 +3,17 @@
 {% set meta = {
 	eyebrow: 'Our company',
 	title: entry.title,
-	text: 'HIR demonstrates our commitment to practices, high standards and continual improvement with the following accreditations.'
+	text: entry.overview
 } %}
 
 {% block content %}
 	
 	<div class="mx-auto max-w-7xl px-6 lg:px-8 prose prose-slate dark:prose-invert">
-		{# <div class="max-w-3xl">
-			{{ entry.text }}
-		</div> #}
+		{% if entry.text ?? false %}
+			<div class="max-w-3xl">
+				{{ entry.text }}
+			</div>
+		{% endif %}
 
 		<div class="grid sm:grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 rounded-2xl md:grid-cols-3">
 			{% for logo in accreditations %}

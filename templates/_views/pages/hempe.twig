@@ -3,7 +3,7 @@
 {% set meta = {
 	eyebrow: 'Our brands',
 	title: entry.title,
-	text: 'HEMPE aims to give customers the freedom to live life without limitations. '
+	text: entry.overview
 } %}
 
 {% block content %}
@@ -24,7 +24,7 @@
 		        		<p class="mt-8">HEMPE aim to give our customers the freedom to live life without limitations. Providing relief from those aches, sore muscles and skin complaints that can sometimes hold us back. Scientifically created using over 60 years of research by world renowned scientists.</p>
 		      		</div>
 		    	</div>
-		    	<dl class="mt-10 grid grid-cols-2 gap-8 pt-10 sm:grid-cols-3">
+		    	{# <dl class="mt-10 grid grid-cols-2 gap-8 pt-10 sm:grid-cols-3">
 		      		<div>
 		        		<dt class="text-sm font-semibold leading-6 text-gray-600">Founded</dt>
 		        		<dd class="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">2021</dd>
@@ -37,7 +37,7 @@
 		        		<dt class="text-sm font-semibold leading-6 text-gray-600">Countries available in</dt>
 		        		<dd class="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">12</dd>
 		      		</div>
-		    	</dl>
+		    	</dl> #}
 		    	<div class="mt-10 flex">
 		      		<a href="https://hempehelps.com" class="text-base font-semibold leading-7 text-[#40B8BA]">Visit hempehelps.com <span aria-hidden="true">&rarr;</span></a>
 		    	</div>

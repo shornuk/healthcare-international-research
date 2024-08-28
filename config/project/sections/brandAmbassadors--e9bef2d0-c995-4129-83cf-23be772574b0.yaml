@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - f9de22e0-c294-424e-aace-d29a5ee22038 # Brand Ambassador
+handle: brandAmbassadors
+maxAuthors: 1
+name: 'Brand Ambassadors'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  6c1f48e9-4588-4100-8f79-5410aacc580e: # Healthcare International Research
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel
