@@ -1,4 +1,4 @@
-dateModified: 1724928375
+dateModified: 1724938301
 elementSources:
   craft\elements\Asset:
     -
@@ -94,6 +94,7 @@ meta:
     0cbecadd-ee18-404d-b340-501f913e1d53: 'SEO Description' # SEO Description
     0cdf5e66-0279-4f0a-8f0f-06c654bfc5ac: Sponsorships # Sponsorships
     1a9a25d9-faab-4ef2-8068-c2f61ba2fe83: Sponsorships # Sponsorships
+    1d125c5c-0a0c-4b2d-984f-01aaf91b0747: 'Email Address' # Email Address
     4c390422-fe27-4399-a798-28842880cd8b: Events # Events
     6ba08a18-cefd-493b-be25-ba634a67d787: 'SEO Title' # SEO Title
     6c1f48e9-4588-4100-8f79-5410aacc580e: 'Healthcare International Research' # Healthcare International Research
@@ -103,6 +104,7 @@ meta:
     8cf86d52-5138-4673-9caf-1ab9401a623c: Events # Events
     9faf58bf-5c44-45b7-a7e0-5c08271828aa: Research # Research
     69c03b0f-93dd-41d5-b683-4c65029a399a: 'Event Website' # Event Website
+    72a0bdfa-526c-422a-ac78-880666378d4d: Location # Location
     208c7680-47e0-46c7-9b9f-27851975835d: Pages # Pages
     778c4b04-b6ad-49b4-9178-86911f2aaee1: Sponsorship # Sponsorship
     955fe759-5ee7-4082-b22a-42b3712b6cd8: Published # Published
@@ -110,6 +112,7 @@ meta:
     57737f4b-6c39-496e-bd34-06936ecbce43: 'Brand Ambassadors' # Brand Ambassadors
     342272a1-1d3a-4d4c-b9b9-77b13acf6984: Brand # Brand
     438243f5-3528-40db-89f7-320c3bb39e29: Photo # Photo
+    53531453-fab3-46f7-a890-f0a81a999180: Address # Address
     a26097f1-8675-4718-a4e2-2dea2e29ee99: Defaults # Defaults
     a5524528-c323-41f0-9271-c50a0c48b04d: Event # Event
     aa418ba7-b818-4669-8693-5e4caac625e4: Documents # Documents
@@ -117,6 +120,7 @@ meta:
     b569a424-dcb9-4020-812d-807d38655abf: Documents # Documents
     c08c5155-2407-43fe-ae29-0b430dbeb19c: Simple # Simple
     cc21e5aa-4f58-422f-ace2-09ade4574993: 'SEO Image' # SEO Image
+    cfd3bc6f-e43b-4c4c-9c57-74ab44f0804c: Locations # Locations
     d2d8e874-9460-48c8-beed-355df0e4a564: Text # Text
     e9bef2d0-c995-4129-83cf-23be772574b0: 'Brand Ambassadors' # Brand Ambassadors
     ec4ca3c0-5fcc-42ea-b5b7-8fcad308df2b: Links # Links

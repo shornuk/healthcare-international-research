@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: locations
+instructions: null
+name: Locations
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 72a0bdfa-526c-422a-ac78-880666378d4d # Location
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
