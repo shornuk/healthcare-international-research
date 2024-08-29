@@ -1358,6 +1358,9 @@ select {
 .mt-8 {
   margin-top: 2rem;
 }
+.mt-auto {
+  margin-top: auto;
+}
 .block {
   display: block;
 }
@@ -2358,6 +2361,10 @@ select {
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:gap-x-12 {
