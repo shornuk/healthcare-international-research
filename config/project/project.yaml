@@ -1,4 +1,4 @@
-dateModified: 1724884710
+dateModified: 1724928375
 elementSources:
   craft\elements\Asset:
     -
@@ -128,6 +128,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  feed-me:
+    edition: standard
+    enabled: true
+    schemaVersion: 5.1.1
   seomate:
     edition: standard
     enabled: true
