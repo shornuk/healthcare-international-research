@@ -1,5 +1,7 @@
 {% extends "_layouts/base" %}
 
+{% set listView = craft.app.request.getQueryParam("type")|default('upcoming') %}
+
 {% set meta = {
 	eyebrow: 'Our brands',
 	title: entry.title,
@@ -8,11 +10,24 @@
 
 {% set events = craft.entries()
     .section('events')
-    .all()
 %}
 
+{% if listView == 'previous' %}
+	{% do events.startDate('< '~now|date).orderBy('startDate desc').all() %}
+{% else %}
+	{% do events.startDate('>= '~now|date).orderBy('startDate asc').all() %}
+{% endif %}
+
 {% block content %}
+
  	<div class="mx-auto max-w-7xl px-6 lg:px-8">
+ 		<div class="block">
+	     	<nav class="-mb-px flex space-x-8" aria-label="Tabs">
+	        	<a href="{{ url('find-us') }}" class="{{ listView == 'upcoming' ? 'border-[#40B8BA] text-slate-900' : 'border-transparent text-slate-600' }} whitespace-nowrap border-b-2 px-1 py-4 text-sm font-medium hover:border-gray-300 hover:text-gray-700">Upcoming</a>
+	        	<a href="{{ url('find-us', {type: 'previous'}) }}" class="{{ listView == 'previous' ? 'border-[#40B8BA] text-slate-900' : 'border-transparent text-slate-600' }} whitespace-nowrap border-b-2 px-1 py-4 text-sm font-medium hover:border-gray-300 hover:text-gray-700">Previous</a>
+	      </nav>
+ 		</div>
+
     	<div class="flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
       		<div class="w-full lg:max-w-xl lg:flex-auto">
         		{% if events %}
@@ -27,7 +42,7 @@
 			              			<dt class="sr-only">Description</dt>
 			              			<dd class="mt-2 w-full flex-none text-base leading-7 text-slate-600 dark:text-white/80">{{ event.overview }}
 			              				{% if event.eventWebsite %}
-											<p><a href="{{ event.eventWebsite }}">Find out more &rarr;</a></p>
+											<p><a class="pt-4 inline-block text-sm font-semibold text-[#40B8BA]" href="{{ event.eventWebsite }}">Find out more &rarr;</a></p>
 				              			{% endif %}
 			              			</dd>
 			              			<dt class="sr-only">When</dt>
