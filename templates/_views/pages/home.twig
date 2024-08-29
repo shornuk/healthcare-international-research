@@ -1,5 +1,7 @@
 {% extends "_layouts/base" %}
 {% set gradient = true %}
+{% set photos = entry.photos.all() %}
+{% set stats = entry.stats %}
 
 {% block content %}
 	<div class="relative isolate">
@@ -8,42 +10,37 @@
           		<div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             		
             		<div class="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-	              		<h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">Elevating Natural Healthcare with Premium Wellness and Beauty Solutions.</h1>
-	              		<p class="mt-6 text-lg leading-8 text-slate-600 dark:text-white/80 sm:max-w-md lg:max-w-none">Healthcare International Research (HIR) specialises in the production, distribution, and retail of top-tier, natural wellbeing and skincare products, representing the pinnacle of excellence, specialising in CBD offerings.</p>
-	              		
-	              		{# <div class="mt-10 flex items-center gap-x-6">
-                			<a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                			<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Live demo <span aria-hidden="true">→</span></a>
-              			</div> #}
+	              		<h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">{{ entry.tagline }}</h1>
+	              		<p class="mt-6 text-lg leading-8 text-slate-600 dark:text-white/80 sm:max-w-md lg:max-w-none">{{ entry.overview }}</p>
             		</div>
 
             		<div class="animate-fade mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
               			
               			<div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                				<div class="relative">
-                  				<img src="{{ craft.assets().id(46).one().url() }}" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  				<img src="{{ photos[0]|default(defaults.photo.one()).url() }}" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   				<div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
                 			</div>
               			</div>
               
               			<div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                 			<div class="relative">
-                  				<img src="{{ craft.assets().id(50).one().url() }}" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  				<img src="{{ photos[1]|default(defaults.photo.one()).url() }}" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   				<div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
                 			</div>
                 			<div class="relative">
-                  				<img src="{{ craft.assets().id(47).one().url() }}" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  				<img src="{{ photos[2]|default(defaults.photo.one()).url() }}" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   				<div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
                 			</div>
               			</div>
               			
               			<div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                 			<div class="relative">
-                  				<img src="{{ craft.assets().id(48).one().url() }}" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  				<img src="{{ photos[3]|default(defaults.photo.one()).url() }}" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   				<div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
                 			</div>
                 			<div class="relative">
-                  				<img src="{{ craft.assets().id(49).one().url() }}" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  				<img src="{{ photos[4]|default(defaults.photo.one()).url() }}" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   				<div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
                 			</div>
               			</div>
@@ -56,31 +53,23 @@
 
   	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-  			<h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Leading the way in health and beauty</h2>
+  			<h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">{{ entry.subheading }}</h2>
   			<div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
         		<div class="lg:w-full lg:max-w-2xl lg:flex-auto">
-          			<p class="text-xl leading-8 text-slate-600 dark:text-white/80">Our company is a leader in the distribution of CBD-infused health and beauty products, including topicals, oils, tinctures, and cosmetics, available for both wholesale and retail markets. We pride ourselves on delivering world-class customer service, supported by products that meet the highest standards of quality and effectiveness. Our product offerings have successfully passed stringent global regulatory and safety compliance standards, ensuring they are certified for sale worldwide.</p>
-          			<p class="mt-10 max-w-xl text-base leading-7 text-slate-600 dark:text-white/80">We collaborate with top-tier scientists and utilize state-of-the-art equipment to conduct thorough research and analysis of cannabinoid and healthcare products, in partnership with our experts in the Czech Republic. Our products are manufactured in GMP-certified facilities, where our world-renowned scientists combine the finest ingredients with premium CBD to create exceptional health and beauty solutions. Adhering to strict compliance standards, our products are fully registered and notified through government regulatory compliance bodies globally.</p>
+          			<div class="text-xl leading-8 text-slate-600 dark:text-white/80 prose">{{ entry.text }}</div>
+          			<div class="mt-10 max-w-xl text-base leading-7 text-slate-600 dark:text-white/80 prose">{{ entry.secondaryParagraph }}</div>
         		</div>
         		<div class="lg:flex lg:flex-auto lg:justify-center">
-          			<dl class="w-64 space-y-8 xl:w-80">
-            		{# 	<div class="flex flex-col-reverse gap-y-4">
-              				<dt class="text-base leading-7 text-slate-600 dark:text-slate-400">Trustpilot score 4.9</dt>
-              				<dd class="text-5xl font-semibold tracking-tight text-slate-900 dark:text-white">150+ reviews</dd>
-            			</div> #}
-            			<div class="flex flex-col-reverse gap-y-4">
-              				<dt class="text-base leading-7 text-slate-600 dark:text-slate-400">Founded in 2019</dt>
-              				<dd class="text-5xl font-semibold tracking-tight text-slate-900 dark:text-white">5+ years</dd>
-            			</div>
-            			<div class="flex flex-col-reverse gap-y-4">
-              				<dt class="text-base leading-7 text-slate-600 dark:text-slate-400">Research and development</dt>
-              				<dd class="text-5xl font-semibold tracking-tight text-slate-900 dark:text-white">60+ years</dd>
-            			</div>
-            			<div class="flex flex-col-reverse gap-y-4">
-              				<dt class="text-base leading-7 text-slate-600 dark:text-slate-400">Products available in</dt>
-              				<dd class="text-5xl font-semibold tracking-tight text-slate-900 dark:text-white">30+ Countries, 5 Continents</dd>
-            			</div>
-          			</dl>
+        			{% if stats %}
+	          			<dl class="w-64 space-y-8 xl:w-80">
+	          				{% for stat in stats %}
+  								<div class="flex flex-col-reverse gap-y-4">
+  					  				<dt class="text-base leading-7 text-slate-600 dark:text-slate-400">{{ stat.description }}</dt>
+  					  				<dd class="text-5xl font-semibold tracking-tight text-slate-900 dark:text-white">{{ stat.stat }}</dd>
+  								</div>
+	          				{% endfor %}
+	          			</dl>
+          			{% endif %}
         		</div>
       		</div>
     	</div>

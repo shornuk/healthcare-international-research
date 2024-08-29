@@ -1,4 +1,4 @@
-dateModified: 1724938301
+dateModified: 1724944724
 elementSources:
   craft\elements\Asset:
     -
@@ -102,7 +102,9 @@ meta:
     7fd658cb-e8ae-46cd-8c3d-52af5f71352f: 'Start Date' # Start Date
     8cb4965b-31f5-4fcc-9b8c-4a3f6820e48a: 'Healthcare International Research' # Healthcare International Research
     8cf86d52-5138-4673-9caf-1ab9401a623c: Events # Events
+    9e52894c-723b-4299-91a4-6616e96654f3: Stats # Stats
     9faf58bf-5c44-45b7-a7e0-5c08271828aa: Research # Research
+    27ff068c-8f1b-43ee-9615-76759afe72ef: Photos # Photos
     69c03b0f-93dd-41d5-b683-4c65029a399a: 'Event Website' # Event Website
     72a0bdfa-526c-422a-ac78-880666378d4d: Location # Location
     208c7680-47e0-46c7-9b9f-27851975835d: Pages # Pages

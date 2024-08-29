@@ -36,6 +36,31 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-08-29T15:18:44+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\SlugConditionRule
+                  operator: '='
+                  uid: dea9ce69-fcf2-4ee4-8ee5-e9492ce47f04
+                  value: __home__
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: f72b528d-6b33-4330-aa32-e66eaebc9164 # Subtitle
+            handle: tagline
+            includeInCards: false
+            instructions: null
+            label: Tagline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd780396-1ad2-4f10-93d5-7bc51e0c129c
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2024-08-28T09:26:18+00:00'
             elementCondition: null
             fieldUid: ace47efd-105d-41d5-8d5f-55a57c7ba41e # Overview
@@ -58,6 +83,56 @@ fieldLayouts:
             uid: babc85f0-2210-4aab-9f05-c2b3774e2ada
             userCondition: null
           -
+            dateAdded: '2024-08-29T14:58:24+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\SlugConditionRule
+                  operator: '='
+                  uid: 3c6db875-d9fb-4b84-8e49-3a942b1ac75a
+                  value: __home__
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 27ff068c-8f1b-43ee-9615-76759afe72ef # Photos
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0d644fd6-d3d0-43fe-b3ce-3dbef513b8e2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-29T14:58:24+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\SlugConditionRule
+                  operator: '='
+                  uid: 1ab0ddc1-bcc0-4066-b2fe-fbd8d2188bf3
+                  value: __home__
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: f72b528d-6b33-4330-aa32-e66eaebc9164 # Subtitle
+            handle: subheading
+            includeInCards: false
+            instructions: null
+            label: Subheading
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a990054-c4f9-4322-b65e-461b6b36ff26
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2024-08-22T23:36:03+00:00'
             elementCondition: null
             fieldUid: d2d8e874-9460-48c8-beed-355df0e4a564 # Text
@@ -70,6 +145,56 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 97874c47-3ae0-484f-b09d-1c11f5da9834
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-29T15:00:05+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\SlugConditionRule
+                  operator: '='
+                  uid: 5a036921-db86-473a-be6a-a168e401866d
+                  value: __home__
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: d2d8e874-9460-48c8-beed-355df0e4a564 # Text
+            handle: secondaryParagraph
+            includeInCards: false
+            instructions: null
+            label: 'Secondary Paragraph'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 823c4b85-e054-46c3-936a-955291e1556a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-29T14:55:54+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\SlugConditionRule
+                  operator: '='
+                  uid: c4590567-6da1-493c-9fea-8a5289b0a1ae
+                  value: __home__
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 9e52894c-723b-4299-91a4-6616e96654f3 # Stats
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 26b86b08-575c-4c5d-bba7-68633f3e8f98
             userCondition: null
             warning: null
             width: 100
