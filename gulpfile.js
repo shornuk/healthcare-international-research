@@ -81,19 +81,6 @@ task('build-fonts', (done) =>{
         done();
 });
 
-// Bumps the assets revision number up
-task('assets-rev', (done) => {
-    src(options.config.craft + "custom.php")
-        .pipe(replace(/'staticAssetsVersion' => (\d+),/g, function(match, p1, offset, string) {
-            p1++;
-            log("-> Changed staticAssetsVersion to " + p1);
-            return "'staticAssetsVersion' => " + p1 + ",";
-        }))
-        .pipe(dest(options.config.craft));
-        done();
-});
-
-
 // Watch files for changes
 task('watch', (done) => {
     log("-> Watching for changes");
@@ -117,7 +104,7 @@ task('development', series('dev-css', (done)=>{
     log("-> Development started");
 }));
 
-task('production', series('dev-css','build-css', 'build-img', 'build-fonts', 'assets-rev',(done)=>{
+task('production', series('dev-css','build-css', 'build-img', 'build-fonts',(done)=>{
     done();
     log("-> Build Complete");
 }));
