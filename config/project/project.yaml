@@ -1,4 +1,4 @@
-dateModified: 1724945537
+dateModified: 1724947294
 elementSources:
   craft\elements\Asset:
     -
@@ -60,12 +60,6 @@ elementSources:
       heading: Data
       type: heading
     -
-      key: 'section:e9bef2d0-c995-4129-83cf-23be772574b0' # Brand Ambassadors
-      type: native
-    -
-      key: 'section:1a9a25d9-faab-4ef2-8068-c2f61ba2fe83' # Sponsorships
-      type: native
-    -
       defaultSort:
         - postDate
         - desc
@@ -76,6 +70,12 @@ elementSources:
         - postDate
         - expiryDate
         - link
+      type: native
+    -
+      key: 'section:e9bef2d0-c995-4129-83cf-23be772574b0' # Brand Ambassadors
+      type: native
+    -
+      key: 'section:1a9a25d9-faab-4ef2-8068-c2f61ba2fe83' # Sponsorships
       type: native
 email:
   fromEmail: me@shorn.co.uk
@@ -134,10 +134,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
-  feed-me:
-    edition: standard
-    enabled: true
-    schemaVersion: 5.1.1
   seomate:
     edition: standard
     enabled: true
