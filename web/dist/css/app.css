@@ -1415,6 +1415,10 @@ select {
 .aspect-video {
   aspect-ratio: 16 / 9;
 }
+.size-32 {
+  width: 8rem;
+  height: 8rem;
+}
 .size-6 {
   width: 1.5rem;
   height: 1.5rem;
@@ -1422,10 +1426,6 @@ select {
 .size-8 {
   width: 2rem;
   height: 2rem;
-}
-.size-32 {
-  width: 8rem;
-  height: 8rem;
 }
 .h-0\.5 {
   height: 0.125rem;
@@ -1453,9 +1453,6 @@ select {
 }
 .w-0\.5 {
   width: 0.125rem;
-}
-.w-32 {
-  width: 8rem;
 }
 .w-40 {
   width: 10rem;
@@ -1697,9 +1694,6 @@ select {
 }
 .rounded-xl {
   border-radius: 0.75rem;
-}
-.rounded-full {
-  border-radius: 9999px;
 }
 .border {
   border-width: 1px;
@@ -2236,11 +2230,6 @@ select {
 
   .md\:gap-8 {
     gap: 2rem;
-  }
-
-  .md\:gap-x-8 {
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
   }
 
   .md\:gap-x-12 {
