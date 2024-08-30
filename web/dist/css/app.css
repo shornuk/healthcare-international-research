@@ -1423,6 +1423,10 @@ select {
   width: 2rem;
   height: 2rem;
 }
+.size-32 {
+  width: 8rem;
+  height: 8rem;
+}
 .h-0\.5 {
   height: 0.125rem;
 }
@@ -1693,6 +1697,9 @@ select {
 }
 .rounded-xl {
   border-radius: 0.75rem;
+}
+.rounded-full {
+  border-radius: 9999px;
 }
 .border {
   border-width: 1px;
@@ -2223,8 +2230,8 @@ select {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .md\:gap-8 {
@@ -2234,6 +2241,11 @@ select {
   .md\:gap-x-8 {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+  }
+
+  .md\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 }
 @media (min-width: 1024px) {

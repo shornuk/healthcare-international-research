@@ -12,7 +12,7 @@
 {% set quotePhoto = entry.quotePhoto.one()|default(defaults.photo.one()) %}
 
 {% block content %}
-	<div class="mx-auto max-w-7xl px-6 lg:px-8 grid md:grid-cols-2 md:gap-x-8">
+	<div class="mx-auto max-w-7xl px-6 lg:px-8 grid md:grid-cols-2 md:gap-x-12">
 		{% if entry.text ?? false %}
 			<div class="max-w-3xl prose prose-slate dark:prose-invert">
 				{{ entry.text }}
@@ -32,8 +32,8 @@
 					        	<div class="prose dark:prose-invert">{{ entry.quote }}</div>
 					        </blockquote>
 	      				</div>
-		      			<div class="col-end-1 w-32">
-		        			<img class="rounded-xl bg-slate-50" src="{{ quotePhoto.url() }}" alt="">
+		      			<div class="col-end-1 ">
+		        			<img class="size-32 object-cover rounded-2xl bg-slate-50" src="{{ quotePhoto.url() }}" alt="">
 		      			</div>
 		      			<figcaption class="text-base">
 		      				{% if entry.showSignature %}
