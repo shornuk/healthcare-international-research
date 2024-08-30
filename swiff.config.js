@@ -12,7 +12,7 @@ module.exports = {
         host: '139.162.233.36',
         // The working directory of the remote app folder
         // eg: /srv/users/[user]/apps/[app]
-        appPath: '/home/forge/staging.healthcare-international-research.com/',
+        appPath: '/home/forge/healthcare-international-research.com/',
         // The SSH port to connect on (22 is the SSH default)
         port: 22,
     },
