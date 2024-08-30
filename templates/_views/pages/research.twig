@@ -7,7 +7,7 @@
 } %}
 
 {% set whitePapers = entry.documents.orderBy('subtitle').all() %}
-{% set researchPapers = entry.researchPapers.orderBy('subtitle').all() %}
+{% set researchPapers = entry.researchPapers.all() %}
 {% set researchLinks = entry.links %}
 
 {% set gradient = true %}
@@ -54,8 +54,8 @@
 
  	{% if researchPapers %}
   	
-	  	<div class="mx-auto max-w-7xl px-6 lg:px-8">
-	  		<h2 class="pt-2 mb-6 text-2xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-3xl">White papers</h2>
+	  	<div class="mx-auto max-w-7xl px-6 pt-12 lg:px-8">
+	  		<h2 class="pt-2 mb-6 text-2xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-3xl">Research papers</h2>
 	    	<div class="grid grid-cols-1 gap-x-8 gap-y-16 max-w-none lg:grid-cols-3">
 
 	    		{% for paper in researchPapers %}
