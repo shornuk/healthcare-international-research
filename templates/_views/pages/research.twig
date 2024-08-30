@@ -6,7 +6,7 @@
 	text: entry.overview
 } %}
 
-{% set whitePapers = entry.documents.orderBy('subtitle').all() %}
+{% set whitePapers = entry.documents.all() %}
 {% set researchPapers = entry.researchPapers.all() %}
 {% set researchLinks = entry.links %}
 
