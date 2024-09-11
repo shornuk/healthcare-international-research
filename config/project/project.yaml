@@ -1,4 +1,4 @@
-dateModified: 1725051010
+dateModified: 1726039337
 elementSources:
   craft\elements\Asset:
     -
@@ -105,6 +105,7 @@ meta:
     9e52894c-723b-4299-91a4-6616e96654f3: Stats # Stats
     9faf58bf-5c44-45b7-a7e0-5c08271828aa: Research # Research
     27ff068c-8f1b-43ee-9615-76759afe72ef: Photos # Photos
+    57cdfc0e-93ab-47e8-8b6a-8f0941deb903: Awards # Awards
     69c03b0f-93dd-41d5-b683-4c65029a399a: 'Event Website' # Event Website
     72a0bdfa-526c-422a-ac78-880666378d4d: Location # Location
     208c7680-47e0-46c7-9b9f-27851975835d: Pages # Pages

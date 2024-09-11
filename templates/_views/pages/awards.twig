@@ -1,0 +1,46 @@
+{% extends "_layouts/base" %}
+
+{% set gradient = true %}
+
+{% set meta = {
+	eyebrow: 'Our company',
+	title: entry.title,
+	text: entry.overview
+} %}
+
+{% set awards = entry.awards %}
+
+{% block content %}
+	<div class="mx-auto max-w-7xl px-6 lg:px-8">
+		{% if entry.text ?? false %}
+			<div class="max-w-3xl prose prose-slate dark:prose-invert">
+				{{ entry.text }}
+			</div>
+		{% endif %}
+
+		{% if awards %}
+			<div class="max-w-3xl w-full mb-12">
+				<ul class="space-y-8 w-full">
+				{% for award in awards %}
+					<li class="flex gap-8 w-full">
+						<div class="flex flex-col flex-col-reverse md:flex-row gap-2 md:gap-8">
+							<div class="flex flex-row md:flex-col gap-2 md:gap-0">
+								<p class="md:text-lg md:font-semibold">{{ award.brand }}</p>
+								<span class="md:hidden">&middot;</span>
+								<p>{{ award.recipient }}</p>
+							</div>
+							<div>
+								<p class="text-lg font-semibold">{{ award.award }}</p>
+								<p>{{ award.prize }} <span>&middot; </span> <span class="italic">{{ award.category }}</span></p>
+							</div>
+						</div>
+						<div class="ml-auto">
+							<p class="text-lg font-semibold">{{ award.year }}</p>
+						</div>     
+					</li>
+				{% endfor %}
+				</ul>
+			</div>
+		{% endif %}
+	</div>
+{% endblock %}

@@ -174,6 +174,31 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-09-11T07:05:20+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\SlugConditionRule
+                  operator: '='
+                  uid: 19505535-034a-4647-943c-f2db7ffa3dc5
+                  value: awards
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 57cdfc0e-93ab-47e8-8b6a-8f0941deb903 # Awards
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4be9ee12-fba4-4cee-b735-31331eb77301
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2024-08-29T14:55:54+00:00'
             elementCondition:
               class: craft\elements\conditions\entries\EntryCondition

@@ -1,0 +1,132 @@
+columnSuffix: null
+handle: awards
+instructions: null
+name: Awards
+searchable: false
+settings:
+  addRowLabel: 'Add an award'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Brand
+            -
+              - handle
+              - brand
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Recipient
+            -
+              - handle
+              - recipient
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col3
+        -
+          __assoc__:
+            -
+              - heading
+              - Award
+            -
+              - handle
+              - award
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col4
+        -
+          __assoc__:
+            -
+              - heading
+              - Prize
+            -
+              - handle
+              - prize
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col5
+        -
+          __assoc__:
+            -
+              - heading
+              - Category
+            -
+              - handle
+              - category
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col6
+        -
+          __assoc__:
+            -
+              - heading
+              - Year
+            -
+              - handle
+              - year
+            -
+              - width
+              - ''
+            -
+              - type
+              - number
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - HIR
+        -
+          - col2
+          - hir
+        -
+          - col3
+          - ''
+        -
+          - col4
+          - ''
+        -
+          - col5
+          - ''
+        -
+          - col6
+          - ''
+  maxRows: null
+  minRows: null
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table
