@@ -3,8 +3,8 @@
   "prefer-stable": true,
   "require": {
     "craftcms/ckeditor": "^4.2.0",
-    "craftcms/cms": "5.3.6",
-    "vaersaagod/seomate": "^3.1.0",
+    "craftcms/cms": "5.4.2",
+    "vaersaagod/seomate": "3.1.1",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
@@ -32,10 +32,10 @@
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ],
     "post-update-cmd": [
-        "@craft"
+      "@craft"
     ],
     "post-install-cmd": [
-        "@craft"
+      "@craft"
     ],
     "craft": "./craft migrate/all --interactive=0; ./craft project-config/apply --interactive=0;"
   },
