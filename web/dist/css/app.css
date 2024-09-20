@@ -2538,6 +2538,9 @@ select {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.dark\:text-white\/70:where(.dark, .dark *) {
+  color: rgb(255 255 255 / 0.7);
+}
 .dark\:text-white\/80:where(.dark, .dark *) {
   color: rgb(255 255 255 / 0.8);
 }
