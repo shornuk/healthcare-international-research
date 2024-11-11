@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+Sitemap: https://healthcare-international-research.com/sitemap.xml
