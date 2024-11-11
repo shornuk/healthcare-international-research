@@ -1233,6 +1233,9 @@ select {
 .pointer-events-none {
   pointer-events: none;
 }
+.visible {
+  visibility: visible;
+}
 .fixed {
   position: fixed;
 }
@@ -1334,6 +1337,9 @@ select {
 .ml-auto {
   margin-left: auto;
 }
+.mr-2 {
+  margin-right: 0.5rem;
+}
 .mr-auto {
   margin-right: auto;
 }
@@ -1430,11 +1436,22 @@ select {
   width: 2rem;
   height: 2rem;
 }
+.size-4 {
+  width: 1rem;
+  height: 1rem;
+}
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
 .h-0\.5 {
   height: 0.125rem;
 }
 .h-16 {
   height: 4rem;
+}
+.h-2 {
+  height: 0.5rem;
 }
 .h-32 {
   height: 8rem;
@@ -1483,6 +1500,9 @@ select {
 }
 .w-full {
   width: 100%;
+}
+.min-w-12 {
+  min-width: 3rem;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -1698,6 +1718,9 @@ select {
 .rounded-3xl {
   border-radius: 1.5rem;
 }
+.rounded-full {
+  border-radius: 9999px;
+}
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1733,6 +1756,10 @@ select {
 }
 .border-transparent {
   border-color: transparent;
+}
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 .bg-gray-50 {
   --tw-bg-opacity: 1;
@@ -1773,6 +1800,9 @@ select {
 }
 .fill-gray-50 {
   fill: #f9fafb;
+}
+.fill-current {
+  fill: currentColor;
 }
 .stroke-gray-900\/10 {
   stroke: rgb(17 24 39 / 0.1);
@@ -1894,6 +1924,9 @@ select {
 .pt-8 {
   padding-top: 2rem;
 }
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1959,6 +1992,13 @@ select {
 }
 .tracking-tight {
   letter-spacing: -0.025em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+.text-\[\#0077B5\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 119 181 / var(--tw-text-opacity));
 }
 .text-\[\#40B8BA\] {
   --tw-text-opacity: 1;
@@ -2055,8 +2095,16 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-200 {
   transition-duration: 200ms;
+}
+.duration-300 {
+  transition-duration: 300ms;
 }
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
@@ -2087,6 +2135,9 @@ select {
   --tw-prose-pre-bg: var(--tw-prose-invert-pre-bg);
   --tw-prose-th-borders: var(--tw-prose-invert-th-borders);
   --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
+}
+.\*\:mb-4 > * {
+  margin-bottom: 1rem;
 }
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
