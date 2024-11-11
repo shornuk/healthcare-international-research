@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.5/cdn.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Questrial:wght@400&display=swap" rel="stylesheet">
+    <script>
+	    tailwind.config = {
+	      theme: {
+	        extend: {
+	       		fontFamily: {
+		        'sans': ['"Questrial"'],
+		        'serif': ['Times New Roman']
+		      },
+	          colors: {
+	            mothersage: '#5F8D77',
+	            gold: '#D1A74B'
+	          }
+	        }
+	      }
+	    }
+	  </script>
+</head>
+<body>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+
+<div x-data="{
+    currentStep: 1,
+    totalSteps: 4,
+    showResult: false,
+    result: '',
+    progress: 25,
+    
+    nextStep(answer) {
+        if (answer === 'no' && this.currentStep === 1) {
+            this.showResult = true;
+            this.result = `
+		        <p>Lucky you! It looks like your skin is smooth and free of any signs of cellulite. While many people deal with it at some point in their lives, it&#39;s great that your skin has maintained its natural firmness and tone.</p>
+		        <p>It&#39;s a nice reminder that everyone&#39;s body is different, and it&#39;s wonderful when we can feel confident and comfortable in our own skin regardless of whether it has any signs of cellulite.</p>
+		    `;
+            this.progress = 100;
+            return;
+        }
+        
+        if (answer === 'yes' && this.currentStep === 2) {
+            this.showResult = true;
+            this.result = `
+            	<p>You have the mildest form of cellulite and it is known as Grade 1 cellulite. Grade 1 is classified as a person having no visible cellulite while standing or lying down, but a slight &ldquo;orange peel&rdquo; texture appears when the skin is pinched. This is usually the early stages of cellulite formation, where the connective tissue beneath the skin starts to trap fat cells, leading to subtle changes in the skin&#39;s appearance.</p>
+            	<p>At the Grade 1 stage, the skin is still smooth when relaxed, and there&#39;s no noticeable dimpling without applying pressure. Grade 1 cellulite is often easier to manage and improve through lifestyle changes such as exercise, proper hydration, a healthy diet, and skincare treatments that boost circulation and skin elasticity.</p>
+            `;
+            this.progress = 100;
+            return;
+        }
+        
+        if (answer === 'yes' && this.currentStep === 3) {
+            this.showResult = true;
+            this.result = `
+            	<p>You have Grade 2 cellulite. Grade 2 cellulite is more noticeable than Grade 1 and the skin has a dimpled appearance without pinching. At this stage, the &ldquo;orange peel skin&rdquo; or dimpled appearance is evident when standing but is not noticeable when lying down. The skin starts to lose its smoothness, and the dimples become more pronounced due to increased fat accumulation and changes in the connective tissue beneath the skin.</p>
+            	<p>Grade 2 cellulite is often a result of poor circulation, reduced skin elasticity and fluid retention which all contribute to the visible dimpling. While it is more pronounced than Grade 1, it can still be managed with targeted treatments such as regular exercise, healthy lifestyle, improving circulation, and specific anti-cellulite products or therapies aimed at tightening the skin and breaking down fat deposits.</p>
+            `;
+            this.progress = 100;
+            return;
+        }
+        
+        if (answer === 'yes' && this.currentStep === 4) {
+            this.showResult = true;
+            this.result = `
+            	<p>Grade 3 cellulite is the most advanced and noticeable form of cellulite on the scale. At this stage, the orange peel or dimpled texture is visible whether standing or lying down, and the skin may have a lumpy, uneven appearance. The dimples are deeper and more prominent due to more significant fat accumulation under the skin, poor circulation, and structural changes in the connective tissue beneath the skin. Sometimes the skin can be hard and painful.</p>
+            	<p>With Grade 3 cellulite, there may also be a combination of additional symptoms like skin sagging, a spongy or swollen appearance, and possibly discomfort or tenderness due to fluid retention and increased pressure on the surrounding tissues. This stage is typically associated with a breakdown of collagen and elastin, both of which support skin firmness.</p>
+            	<p>Treating Grade 3 cellulite often requires a more comprehensive approach, including lifestyle changes (incorporating a healthy, balanced diet and regularly exercise for example).</p>
+            	<p>Professional anti-cellulite treatments (such as lymphatic drainage, radiofrequency, acoustic wave therapy or laser therapies), and consistent skincare routines aimed at improving skin texture and circulation. It can be more challenging to reverse compared to earlier stages of cellulite.</p>
+            	<p>However, it should be noted that, although cellulite can bother many of us and be a distressing skin condition, it is purely a cosmetic condition that affects appearance and is not a medical condition.</p>
+            `;
+            this.progress = 100;
+            return;
+        }
+        
+        this.currentStep++;
+        this.progress = (this.currentStep / this.totalSteps) * 100;
+    },
+    
+    restart() {
+        this.currentStep = 1;
+        this.showResult = false;
+        this.result = '';
+        this.progress = 25;
+    }
+}">
+    <div class="max-w-2xl mx-auto p-6">
+        <h1 class="text-4xl font-serif mb-6">Cellulite Grading Calculator</h1>
+        
+        <div class="w-full h-2 bg-gray-200 rounded-full mb-6">
+            <div class="h-full bg-gold rounded-full transition-all duration-300" :style="`width: ${progress}%`"></div>
+        </div>
+
+        <div x-show="!showResult">
+            <div x-show="currentStep === 1" class="bg-white border border-grey-100 p-6 rounded-lg shadow-lg mb-4">
+                <h2 class="text-xl mb-4">Step 1: Do you have any visible cellulite on your skin?</h2>
+                <button @click="nextStep('yes')" class="text-lg tracking-wider bg-mothersage text-white px-6 py-2 rounded-full min-w-12 mr-2">Yes</button>
+                <button @click="nextStep('no')" class="text-lg tracking-wider bg-mothersage text-white px-6 py-2 rounded-full min-w-12">No</button>
+            </div>
+
+            <div x-show="currentStep === 2" class="bg-white border border-grey-100 p-6 rounded-lg shadow-lg mb-4">
+                <h2 class="text-xl mb-4">Step 2: Is your cellulite only visible when you pinch the skin?</h2>
+                <button @click="nextStep('yes')" class="text-lg tracking-wider bg-mothersage text-white px-6 py-2 rounded-full min-w-12 mr-2">Yes</button>
+                <button @click="nextStep('no')" class="text-lg tracking-wider bg-mothersage text-white px-6 py-2 rounded-full min-w-12">No</button>
+            </div>
+
+            <div x-show="currentStep === 3" class="bg-white border border-grey-100 p-6 rounded-lg shadow-lg mb-4">
+                <h2 class="text-xl mb-4">Step 3: Is your cellulite visible when standing but not when lying down?</h2>
+                <button @click="nextStep('yes')" class="text-lg tracking-wider bg-mothersage text-white px-6 py-2 rounded-full min-w-12 mr-2">Yes</button>
+                <button @click="nextStep('no')" class="text-lg tracking-wider bg-mothersage text-white px-6 py-2 rounded-full min-w-12">No</button>
+            </div>
+
+            <div x-show="currentStep === 4" class="bg-white border border-grey-100 p-6 rounded-lg shadow-lg mb-4">
+                <h2 class="text-xl mb-4">Step 4: Is your cellulite visible both when standing and lying down?</h2>
+                <button @click="nextStep('yes')" class="text-lg tracking-wider bg-mothersage text-white px-6 py-2 rounded-full min-w-12 mr-2">Yes</button>
+                <!-- <button @click="nextStep('no')" class="text-lg tracking-wider bg-mothersage text-white px-6 py-2 rounded-full min-w-12">No</button> -->
+            </div>
+        </div>
+
+        <div x-show="showResult" class="bg-gray-50 p-6 rounded-lg">
+            <h2 class="text-xl mb-4">Your Result:</h2>
+            <div class="mb-4 text-lg tracking-wider *:mb-4" x-html="result"></div>
+            <button @click="restart()" class="text-lg tracking-wider bg-mothersage text-white px-6 py-2 rounded-full min-w-12">Start Over</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    [x-cloak] { display: none !important; }
+</style>
+</body>
+</html>
