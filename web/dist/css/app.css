@@ -1292,9 +1292,6 @@ select {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
 .col-end-1 {
   grid-column-end: 1;
 }
@@ -2263,6 +2260,10 @@ select {
   }
 }
 @media (min-width: 768px) {
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
 
   .md\:mt-0 {
     margin-top: 0px;
