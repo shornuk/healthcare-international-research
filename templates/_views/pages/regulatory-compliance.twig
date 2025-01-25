@@ -18,18 +18,18 @@
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 
 		<p class="text-xl font-semibold mb-4 text-slate-900 dark:text-white">Registrations</p>
-		<div class="grid sm:grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 rounded-2xl md:grid-cols-3 mb-8">
+		<div class="grid sm:grid-cols-2 gap-1 overflow-hidden sm:mx-0 rounded-2xl md:grid-cols-6 mb-8">
 			{% for logo in registrations %}
-				<div class="bg-slate-100 dark:bg-slate-200 sm:p-4">
-        			<img class="max-h-32 w-full object-contain" src="{{ logo.href }}" alt="{{ logo.title }}">
+				<div class="bg-slate-100 dark:bg-slate-200 p-6 sm:p-4 {{ loop.index <= 2 ? 'md:col-span-3' : 'md:col-span-2' }}">
+        			<img class="{{ loop.index <= 2 ? 'max-h-40' : 'max-h-32' }} w-full object-contain" src="{{ logo.href }}" alt="{{ logo.title }}">
       			</div>
 			{% endfor %}
     	</div>
 
     	<p class="text-xl font-semibold mb-4 text-slate-900 dark:text-white">Accreditations</p>
-		<div class="grid gap-0.5 overflow-hidden sm:mx-0 rounded-2xl md:grid-cols-3 mb-8">
+		<div class="grid gap-1 overflow-hidden sm:mx-0 rounded-2xl md:grid-cols-3 mb-8">
 			{% for logo in accreditations %}
-				<div class="bg-slate-100 dark:bg-slate-200 sm:p-4{{ loop.last ? ' md:col-span-3' }}">
+				<div class="bg-slate-100 dark:bg-slate-200 p-6 sm:p-4{{ loop.last ? ' md:col-span-3' }}">
         			<img class="max-h-32 w-full object-contain" src="{{ logo.href }}" alt="{{ logo.title }}">
       			</div>
 			{% endfor %}
