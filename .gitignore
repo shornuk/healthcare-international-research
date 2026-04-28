@@ -16,6 +16,7 @@
 .env.php
 .env.sh
 .env
+scripts/sync.env.sh
 
 # COMPOSER
 /vendor
