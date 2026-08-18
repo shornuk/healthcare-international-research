@@ -14,7 +14,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -23,7 +22,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -40,10 +38,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: ace47efd-105d-41d5-8d5f-55a57c7ba41e # Overview
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -62,10 +58,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: d2d8e874-9460-48c8-beed-355df0e4a564 # Text
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -78,10 +72,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: b569a424-dcb9-4020-812d-807d38655abf # Documents
             handle: null
-            includeInCards: false
             instructions: null
             label: 'White Papers'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -100,10 +92,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: b569a424-dcb9-4020-812d-807d38655abf # Documents
             handle: researchPapers
-            includeInCards: false
             instructions: null
             label: 'Research Papers'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -122,10 +112,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: ec4ca3c0-5fcc-42ea-b5b7-8fcad308df2b # Links
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Research Links'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -144,10 +132,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 6ba08a18-cefd-493b-be25-ba634a67d787 # SEO Title
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -160,10 +146,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 0cbecadd-ee18-404d-b340-501f913e1d53 # SEO Description
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -176,10 +160,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: cc21e5aa-4f58-422f-ace2-09ade4574993 # SEO Image
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

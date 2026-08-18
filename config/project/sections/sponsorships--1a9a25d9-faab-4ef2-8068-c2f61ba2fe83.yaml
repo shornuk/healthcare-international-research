@@ -1,22 +1,17 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 778c4b04-b6ad-49b4-9178-86911f2aaee1 # Sponsorship
+  -
+    uid: 778c4b04-b6ad-49b4-9178-86911f2aaee1 # Sponsorship
 handle: sponsorships
 maxAuthors: 1
+minAuthors: 1
 name: Sponsorships
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   6c1f48e9-4588-4100-8f79-5410aacc580e: # Healthcare International Research

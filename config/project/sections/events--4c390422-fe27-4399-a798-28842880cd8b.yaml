@@ -1,22 +1,17 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - a5524528-c323-41f0-9271-c50a0c48b04d # Event
+  -
+    uid: a5524528-c323-41f0-9271-c50a0c48b04d # Event
 handle: events
 maxAuthors: 1
+minAuthors: 1
 name: Events
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   6c1f48e9-4588-4100-8f79-5410aacc580e: # Healthcare International Research

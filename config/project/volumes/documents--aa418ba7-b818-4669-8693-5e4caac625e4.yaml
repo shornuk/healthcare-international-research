@@ -2,6 +2,8 @@ altTranslationKeyFormat: null
 altTranslationMethod: none
 fieldLayouts:
   c76d85c2-270f-4751-ab3b-44888ed2c083:
+    cardView:
+      - 'layoutElement:3aa69b6f-ce9d-417d-80b7-650409677e51'
     tabs:
       -
         elementCondition: null
@@ -15,7 +17,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -24,7 +25,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -41,10 +41,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: f72b528d-6b33-4330-aa32-e66eaebc9164 # Subtitle
             handle: null
-            includeInCards: true
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -57,10 +55,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: ace47efd-105d-41d5-8d5f-55a57c7ba41e # Overview
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -73,10 +69,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 955fe759-5ee7-4082-b22a-42b3712b6cd8 # Published
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

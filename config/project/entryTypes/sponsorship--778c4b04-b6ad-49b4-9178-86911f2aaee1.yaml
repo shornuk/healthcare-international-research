@@ -1,6 +1,9 @@
 color: null
 fieldLayouts:
   1406d81d-bc2a-4361-b1ac-4ea9e2b86852:
+    cardView:
+      - 'layoutElement:724d8eb4-ad01-48bf-a03d-150d339b87c0'
+      - 'layoutElement:e1c12425-52fc-4154-9f2c-20887f782280'
     tabs:
       -
         elementCondition: null
@@ -14,7 +17,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: Name
@@ -23,7 +25,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -40,10 +41,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: ace47efd-105d-41d5-8d5f-55a57c7ba41e # Overview
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -56,10 +55,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 438243f5-3528-40db-89f7-320c3bb39e29 # Photo
             handle: null
-            includeInCards: true
             instructions: null
             label: null
-            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -72,10 +69,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 438243f5-3528-40db-89f7-320c3bb39e29 # Photo
             handle: logo
-            includeInCards: true
             instructions: null
             label: Logo
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -86,6 +81,7 @@ fieldLayouts:
         name: Content
         uid: 28b41bc6-635e-4979-9905-140aa4b95001
         userCondition: null
+    thumbFieldKey: 'layoutElement:724d8eb4-ad01-48bf-a03d-150d339b87c0'
 handle: sponsorship
 hasTitleField: true
 icon: ''

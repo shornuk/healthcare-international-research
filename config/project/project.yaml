@@ -1,4 +1,4 @@
-dateModified: 1760712625
+dateModified: 1787078259
 elementSources:
   craft\elements\Asset:
     -
@@ -121,7 +121,6 @@ meta:
     aa418ba7-b818-4669-8693-5e4caac625e4: Documents # Documents
     ace47efd-105d-41d5-8d5f-55a57c7ba41e: Overview # Overview
     b569a424-dcb9-4020-812d-807d38655abf: Documents # Documents
-    c08c5155-2407-43fe-ae29-0b430dbeb19c: Simple # Simple
     cc21e5aa-4f58-422f-ace2-09ade4574993: 'SEO Image' # SEO Image
     cfd3bc6f-e43b-4c4c-9c57-74ab44f0804c: Locations # Locations
     d2d8e874-9460-48c8-beed-355df0e4a564: Text # Text
@@ -134,7 +133,7 @@ plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0.0
+    schemaVersion: 5.6.0.0
   seomate:
     edition: standard
     enabled: true
@@ -144,7 +143,7 @@ system:
   live: true
   name: 'Healthcare International Research'
   retryDuration: null
-  schemaVersion: 5.8.0.3
+  schemaVersion: 5.10.0.0
   timeZone: Europe/London
 users:
   allowPublicRegistration: false
