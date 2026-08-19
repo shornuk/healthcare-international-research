@@ -1,6 +1,9 @@
+allowLineBreaksInTitles: false
 color: null
+description: null
 fieldLayouts:
   94374abc-0302-4a7a-907d-abd546017cf6:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -23,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,7 +38,9 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2024-08-28T21:50:00+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: ace47efd-105d-41d5-8d5f-55a57c7ba41e # Overview
             handle: null
             instructions: null
@@ -55,7 +60,9 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2024-08-28T21:50:00+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: d2d8e874-9460-48c8-beed-355df0e4a564 # Text
             handle: null
             instructions: null
@@ -69,7 +76,9 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2024-08-28T21:50:00+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: b569a424-dcb9-4020-812d-807d38655abf # Documents
             handle: null
             instructions: null
@@ -89,7 +98,9 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2024-08-30T15:56:18+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: b569a424-dcb9-4020-812d-807d38655abf # Documents
             handle: researchPapers
             instructions: null
@@ -109,7 +120,9 @@ fieldLayouts:
             userCondition: null
           -
             dateAdded: '2024-08-28T21:57:37+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: ec4ca3c0-5fcc-42ea-b5b7-8fcad308df2b # Links
             handle: null
             instructions: null
@@ -121,6 +134,28 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2026-08-19T11:03:52+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 24199ef3-f855-4e58-a028-d51b376adf83
+            userCondition: null
+          -
+            dateAdded: '2026-08-19T11:03:52+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d2d8e874-9460-48c8-beed-355df0e4a564 # Text
+            handle: text2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a326819-8aab-4cdf-982c-88760b873d5e
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: e1148d35-eb6a-44bc-a800-b048311719d8
         userCondition: null
@@ -129,7 +164,9 @@ fieldLayouts:
         elements:
           -
             dateAdded: '2024-08-28T22:38:11+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 6ba08a18-cefd-493b-be25-ba634a67d787 # SEO Title
             handle: null
             instructions: null
@@ -143,7 +180,9 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2024-08-28T22:38:11+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 0cbecadd-ee18-404d-b340-501f913e1d53 # SEO Description
             handle: null
             instructions: null
@@ -157,7 +196,9 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2024-08-28T22:38:11+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: cc21e5aa-4f58-422f-ace2-09ade4574993 # SEO Image
             handle: null
             instructions: null
@@ -172,14 +213,16 @@ fieldLayouts:
         name: SEO
         uid: e9053ebd-a6e2-45cb-9616-d31d68c21d23
         userCondition: null
+    thumbFieldKey: null
 handle: research
 hasTitleField: true
-icon: ''
+icon: null
 name: Research
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

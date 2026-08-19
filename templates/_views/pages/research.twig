@@ -108,7 +108,13 @@
 		</div>
 	{% endif %}
 
-    
+	<div class="mx-auto max-w-7xl px-6 lg:px-8 prose prose-slate dark:prose-invert pt-12">
+		{% if entry.text2 ?? false %}
+			<div class="max-w-3xl mb-8">
+				{{ entry.text2 }}
+			</div>
+		{% endif %}
+	</div>
 
 	
 {% endblock %}
