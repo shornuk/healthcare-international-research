@@ -1,4 +1,4 @@
-dateModified: 1787137432
+dateModified: 1787139648
 elementSources:
   craft\elements\Asset:
     -
@@ -37,6 +37,7 @@ elementSources:
         - desc
       disabled: false
       key: '*'
+      page: Entries
       tableAttributes:
         - status
         - section
@@ -48,8 +49,10 @@ elementSources:
       defaultSort:
         - structure
         - asc
+      defaultViewMode: ''
       disabled: false
       key: 'section:208c7680-47e0-46c7-9b9f-27851975835d' # Pages
+      page: Entries
       tableAttributes:
         - status
         - postDate
@@ -58,6 +61,8 @@ elementSources:
       type: native
     -
       heading: Data
+      key: 'heading:bf3cbc9f-2114-42eb-a4d2-64ccc870d123'
+      page: Entries
       type: heading
     -
       defaultSort:
@@ -65,6 +70,7 @@ elementSources:
         - desc
       disabled: false
       key: 'section:4c390422-fe27-4399-a798-28842880cd8b' # Events
+      page: Entries
       tableAttributes:
         - status
         - postDate
@@ -73,9 +79,15 @@ elementSources:
       type: native
     -
       key: 'section:e9bef2d0-c995-4129-83cf-23be772574b0' # Brand Ambassadors
+      page: Entries
       type: native
     -
       key: 'section:1a9a25d9-faab-4ef2-8068-c2f61ba2fe83' # Sponsorships
+      page: Entries
+      type: native
+    -
+      key: 'section:c4c2ad9f-d076-4df8-b98d-c6078ddc6a2e' # Registrations and Accreditations
+      page: Entries
       type: native
 email:
   fromEmail: me@shorn.co.uk
@@ -120,7 +132,9 @@ meta:
     a5524528-c323-41f0-9271-c50a0c48b04d: Event # Event
     aa418ba7-b818-4669-8693-5e4caac625e4: Documents # Documents
     ace47efd-105d-41d5-8d5f-55a57c7ba41e: Overview # Overview
+    af50c884-368d-4af0-bf4e-0e09ab62616d: 'Registrations and Accreditations' # Registrations and Accreditations
     b569a424-dcb9-4020-812d-807d38655abf: Documents # Documents
+    c4c2ad9f-d076-4df8-b98d-c6078ddc6a2e: 'Registrations and Accreditations' # Registrations and Accreditations
     cc21e5aa-4f58-422f-ace2-09ade4574993: 'SEO Image' # SEO Image
     cfd3bc6f-e43b-4c4c-9c57-74ab44f0804c: Locations # Locations
     d2d8e874-9460-48c8-beed-355df0e4a564: Text # Text
