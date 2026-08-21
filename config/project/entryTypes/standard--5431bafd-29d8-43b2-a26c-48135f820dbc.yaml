@@ -183,6 +183,29 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-08-21T13:41:00+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\SlugConditionRule
+                  operator: '='
+                  uid: 027bea2d-ff87-410f-8e72-34014e176571
+                  value: regulatory-compliance
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 680e6ba5-6aac-43a9-8e59-d4d8fb387c5a # Accreditations
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 94366bc1-0616-410d-8dbc-4ba4d536cbc1
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2024-08-29T14:55:54+00:00'
             elementCondition:
               class: craft\elements\conditions\entries\EntryCondition

@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: accreditations
+instructions: null
+name: Accreditations
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Add an accreditation'
+  showCardsInGrid: false
+  showSiteMenu: true
+  sources:
+    - 'section:c4c2ad9f-d076-4df8-b98d-c6078ddc6a2e' # Registrations and Accreditations
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries
